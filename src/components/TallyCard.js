@@ -39,6 +39,8 @@ export default ({ name, setName, count, setCount, removeFunction }) => {
       p="md"
       sx={(theme) => ({
         backgroundColor: theme.colors.dark[6],
+        WebkitUserSelect: "none",
+        userSelect: "none",
       })}
     >
       <Group position="apart">
@@ -66,7 +68,6 @@ export default ({ name, setName, count, setCount, removeFunction }) => {
             sx={() => ({
               flexBasis: 0,
               flexGrow: 1,
-              userSelect: "none",
               whiteSpace: "nowrap",
               overflow: "hidden",
               textOverflow: "ellipsis",
@@ -100,14 +101,7 @@ export default ({ name, setName, count, setCount, removeFunction }) => {
         </ActionIcon>
       </Group>
       <Center>
-        <Text
-          fz="72pt"
-          fw={700}
-          c="teal.4"
-          sx={() => ({
-            userSelect: "none",
-          })}
-        >
+        <Text fz="72pt" fw={700} c="teal.4">
           {count}
         </Text>
       </Center>
