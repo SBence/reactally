@@ -42,6 +42,7 @@ export default ({ name, setName, count, setCount, removeFunction }) => {
         WebkitUserSelect: "none",
         userSelect: "none",
       })}
+      onContextMenu={(event) => event.preventDefault()}
     >
       <Group position="apart">
         {editMode ? (
@@ -116,15 +117,8 @@ export default ({ name, setName, count, setCount, removeFunction }) => {
         >
           <ActionIcon
             onClick={() => setCount(count - 1)}
-            onPointerDown={() => {
-              {
-                navigator.vibrate(VIBRATION_STRENGTH.weak);
-                resetTimeout = setTimeout(() => {
-                  navigator.vibrate(VIBRATION_STRENGTH.strong);
-                  setCount(0);
-                }, 500);
-              }
-            }}
+            onPointerDown={() => navigator.vibrate(VIBRATION_STRENGTH.weak)}
+            onContextMenu={() => setCount(0)}
             onPointerUp={() => {
               navigator.vibrate(VIBRATION_STRENGTH.medium);
               clearTimeout(resetTimeout);
