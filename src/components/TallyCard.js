@@ -61,8 +61,8 @@ export default ({ name, setName, count, setCount, removeFunction }) => {
             maxLength={MAX_NAME_LENGTH}
             enterKeyHint="done"
             onKeyDown={(event) => {
-              if (event.key === "Enter") {
-                setName(nameInput);
+              if (event.key === "Enter" || event.key === "Escape") {
+                if (event.key === "Enter") setName(nameInput);
                 setEditMode(false);
               }
             }}
