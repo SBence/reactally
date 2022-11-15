@@ -18,6 +18,9 @@ import {
 import { useEffect, useRef, useState } from "react";
 import VIBRATION_STRENGTH from "../constants/VibrationStrength.js";
 
+const MAX_COUNT = 99999;
+const MAX_NAME_LENGTH = 16;
+
 export default ({ name, setName, count, setCount, removeFunction }) => {
   const [editMode, setEditMode] = useState(false);
   const [nameInput, setNameInput] = useState();
@@ -55,6 +58,7 @@ export default ({ name, setName, count, setCount, removeFunction }) => {
               flexGrow: 1,
               height: "34px",
             })}
+            maxLength={MAX_NAME_LENGTH}
             enterKeyHint="done"
             onKeyDown={(event) => {
               if (event.key === "Enter") {
@@ -151,6 +155,7 @@ export default ({ name, setName, count, setCount, removeFunction }) => {
             onClick={() => setCount(count + 1)}
             onPointerDown={() => navigator.vibrate(VIBRATION_STRENGTH.weak)}
             onPointerUp={() => navigator.vibrate(VIBRATION_STRENGTH.medium)}
+            disabled={count >= MAX_COUNT}
             color="dark.4"
             size="xl"
             radius="md"
