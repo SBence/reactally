@@ -12,7 +12,9 @@ const DEFAULT_COUNTER = {
 
 function App() {
   const storedCounters = localStorage.getItem(LOCAL_STORAGE_KEY);
-  const [counters, setCounters] = useState(JSON.parse(storedCounters) ?? {});
+  const [counters, setCounters] = useState(
+    () => JSON.parse(storedCounters) ?? {}
+  );
 
   useEffect(
     () => localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(counters)),
