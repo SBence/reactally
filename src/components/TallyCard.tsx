@@ -16,20 +16,30 @@ import {
   IconTrash,
 } from "@tabler/icons";
 import { useEffect, useRef, useState } from "react";
-import VIBRATION_STRENGTH from "../constants/VibrationStrength.js";
+import VIBRATION_STRENGTH from "../constants/VibrationStrength";
 
 const MAX_COUNT = 99999;
 const MAX_NAME_LENGTH = 32;
 
-export default ({ name, setName, count, setCount, removeFunction }) => {
-  const [editMode, setEditMode] = useState(false);
-  const [nameInput, setNameInput] = useState();
-  const nameInputRef = useRef();
-
-  let resetTimeout;
+export default ({
+  name,
+  setName,
+  count,
+  setCount,
+  removeFunction,
+}: {
+  name: string;
+  setName: (name: string) => void;
+  count: number;
+  setCount: (count: number) => void;
+  removeFunction: () => void;
+}) => {
+  const [editMode, setEditMode] = useState<boolean>(false);
+  const [nameInput, setNameInput] = useState<string>("");
+  const nameInputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
-    if (editMode) {
+    if (editMode && nameInputRef.current) {
       nameInputRef.current.focus();
       nameInputRef.current.select();
     }
@@ -98,7 +108,7 @@ export default ({ name, setName, count, setCount, removeFunction }) => {
           color="red.5"
           size="lg"
           radius="md"
-          onClick={removeFunction}
+          onClick={() => removeFunction()}
           onPointerDown={() => navigator.vibrate(VIBRATION_STRENGTH.medium)}
           onPointerUp={() => navigator.vibrate(VIBRATION_STRENGTH.strong)}
         >
@@ -123,11 +133,7 @@ export default ({ name, setName, count, setCount, removeFunction }) => {
             onClick={() => setCount(count - 1)}
             onPointerDown={() => navigator.vibrate(VIBRATION_STRENGTH.weak)}
             onContextMenu={() => setCount(0)}
-            onPointerUp={() => {
-              navigator.vibrate(VIBRATION_STRENGTH.medium);
-              clearTimeout(resetTimeout);
-            }}
-            onPointerCancel={() => clearTimeout(resetTimeout)}
+            onPointerUp={() => navigator.vibrate(VIBRATION_STRENGTH.medium)}
             disabled={!count}
             color="dark.4"
             size="xl"

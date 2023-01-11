@@ -1,8 +1,8 @@
 import { Center, MediaQuery, Paper } from "@mantine/core";
 import { IconPlus } from "@tabler/icons";
-import VIBRATION_STRENGTH from "../constants/VibrationStrength.js";
+import VIBRATION_STRENGTH from "../constants/VibrationStrength";
 
-export default ({ addFunction }) => {
+export default ({ addFunction }: { addFunction: () => void }) => {
   return (
     <MediaQuery
       query="(hover: hover)"
@@ -20,7 +20,7 @@ export default ({ addFunction }) => {
         sx={() => ({
           cursor: "pointer",
         })}
-        onClick={addFunction}
+        onClick={() => addFunction()}
         onPointerDown={() => navigator.vibrate(VIBRATION_STRENGTH.medium)}
         onPointerUp={() => navigator.vibrate(VIBRATION_STRENGTH.strong)}
       >

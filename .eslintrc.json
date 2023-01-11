@@ -7,8 +7,10 @@
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:react/jsx-runtime",
+    "plugin:@typescript-eslint/recommended",
     "prettier"
   ],
+  "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
@@ -16,18 +18,16 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": ["react"],
+  "plugins": ["react", "@typescript-eslint"],
   "overrides": [
     {
-      "files": ["src/*.test.js"],
+      "files": ["src/*.test.tsx"],
       "env": { "jest/globals": true },
       "plugins": ["jest"],
       "extends": ["plugin:jest/recommended"]
     }
   ],
   "rules": {
-    "no-unused-vars": "warn",
-    "react/prop-types": ["error", { "skipUndeclared": true }],
     "react/display-name": "off"
   }
 }
