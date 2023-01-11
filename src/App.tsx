@@ -1,8 +1,10 @@
 import "./App.css";
 import { Box, MantineProvider, SimpleGrid } from "@mantine/core";
-import TallyCard from "./components/TallyCard.js";
+import TallyCard from "./components/TallyCard";
 import { useEffect, useState } from "react";
-import AddCard from "./components/AddCard.js";
+import AddCard from "./components/AddCard";
+import { Counters } from "./interfaces/counter";
+import { v4 as uuidv4 } from "uuid";
 
 const LOCAL_STORAGE_KEY = "counters";
 const DEFAULT_COUNTER = {
@@ -11,9 +13,9 @@ const DEFAULT_COUNTER = {
 };
 
 function App() {
-  const storedCounters = localStorage.getItem(LOCAL_STORAGE_KEY);
-  const [counters, setCounters] = useState(
-    () => JSON.parse(storedCounters) ?? {}
+  const storedCounters = localStorage.getItem(LOCAL_STORAGE_KEY) ?? "{}";
+  const [counters, setCounters] = useState<Counters>(() =>
+    JSON.parse(storedCounters)
   );
 
   useEffect(
@@ -25,23 +27,23 @@ function App() {
     setCounters((oldCounters) => {
       return {
         ...oldCounters,
-        [Math.random()]: DEFAULT_COUNTER,
+        [uuidv4()]: DEFAULT_COUNTER,
       };
     });
   }
-  function removeCounter(id) {
+  function removeCounter(id: string) {
     setCounters((oldCounters) => {
       const newCounters = { ...oldCounters };
       delete newCounters[id];
       return newCounters;
     });
   }
-  function setCounterValue(id, count) {
+  function setCounterValue(id: string, count: number) {
     setCounters((oldCounters) => {
       return { ...oldCounters, [id]: { ...oldCounters[id], count } };
     });
   }
-  function setCounterName(id, name) {
+  function setCounterName(id: string, name: string) {
     setCounters((oldCounters) => {
       return { ...oldCounters, [id]: { ...oldCounters[id], name } };
     });
