@@ -19,7 +19,7 @@ import { useEffect, useRef, useState } from "react";
 import VIBRATION_STRENGTH from "../constants/VibrationStrength.js";
 
 const MAX_COUNT = 99999;
-const MAX_NAME_LENGTH = 16;
+const MAX_NAME_LENGTH = 32;
 
 export default ({ name, setName, count, setCount, removeFunction }) => {
   const [editMode, setEditMode] = useState(false);
