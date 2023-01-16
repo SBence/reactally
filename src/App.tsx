@@ -1,10 +1,12 @@
 import "./App.css";
-import { Box, MantineProvider, SimpleGrid } from "@mantine/core";
+import { Container, MantineProvider, SimpleGrid } from "@mantine/core";
 import TallyCard from "./components/TallyCard";
 import { useEffect, useState } from "react";
 import AddCard from "./components/AddCard";
 import { Counters } from "./interfaces/counter";
 import { v4 as uuidv4 } from "uuid";
+import TopBar from "./components/TopBar";
+import { NotificationsProvider } from "@mantine/notifications";
 
 const LOCAL_STORAGE_KEY = "counters";
 const DEFAULT_COUNTER = {
@@ -64,29 +66,39 @@ function App() {
       withGlobalStyles
       withNormalizeCSS
     >
-      <Box sx={(theme) => ({ padding: theme.spacing.xl })}>
-        <SimpleGrid
-          breakpoints={[
-            { minWidth: "xs", cols: 2 },
-            { minWidth: "sm", cols: 3 },
-            { minWidth: "md", cols: 4 },
-            { minWidth: "lg", cols: 5 },
-            { minWidth: "xl", cols: 6 },
-          ]}
+      <NotificationsProvider>
+        <TopBar counters={counters} setCounters={setCounters} />
+        <Container
+          size={1920}
+          px="xl"
+          sx={(theme) => ({
+            paddingTop: theme.spacing.xl,
+            paddingBottom: theme.spacing.xl,
+          })}
         >
-          {Object.keys(counters).map((counterId) => (
-            <TallyCard
-              key={counterId}
-              name={counters[counterId].name}
-              setName={(name) => setCounterName(counterId, name)}
-              count={counters[counterId].count}
-              setCount={(count) => setCounterValue(counterId, count)}
-              removeFunction={() => removeCounter(counterId)}
-            />
-          ))}
-          <AddCard addFunction={addCounter} />
-        </SimpleGrid>
-      </Box>
+          <SimpleGrid
+            breakpoints={[
+              { minWidth: "xs", cols: 2 },
+              { minWidth: "sm", cols: 3 },
+              { minWidth: "md", cols: 4 },
+              { minWidth: "lg", cols: 5 },
+              { minWidth: "xl", cols: 6 },
+            ]}
+          >
+            {Object.keys(counters).map((counterId) => (
+              <TallyCard
+                key={counterId}
+                name={counters[counterId].name}
+                setName={(name) => setCounterName(counterId, name)}
+                count={counters[counterId].count}
+                setCount={(count) => setCounterValue(counterId, count)}
+                removeFunction={() => removeCounter(counterId)}
+              />
+            ))}
+            <AddCard addFunction={addCounter} />
+          </SimpleGrid>
+        </Container>
+      </NotificationsProvider>
     </MantineProvider>
   );
 }
