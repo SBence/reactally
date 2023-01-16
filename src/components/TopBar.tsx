@@ -6,9 +6,13 @@ import MenuButton from "./MenuButton";
 export default ({
   counters,
   setCounters,
+  accentColor,
+  setAccentColor,
 }: {
   counters: Counters;
   setCounters: Dispatch<SetStateAction<Counters>>;
+  accentColor: string;
+  setAccentColor: Dispatch<SetStateAction<string>>;
 }) => {
   return (
     <Header height={64}>
@@ -27,11 +31,16 @@ export default ({
         >
           <Title order={2}>
             <Text component="span">Reac</Text>
-            <Text color="teal.4" component="span">
+            <Text color={accentColor} component="span">
               Tally
             </Text>
           </Title>
-          <MenuButton counters={counters} setCounters={setCounters} />
+          <MenuButton
+            counters={counters}
+            setCounters={setCounters}
+            accentColor={accentColor}
+            setAccentColor={setAccentColor}
+          />
         </Group>
       </Container>
     </Header>

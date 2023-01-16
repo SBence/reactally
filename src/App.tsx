@@ -1,5 +1,10 @@
 import "./App.css";
-import { Container, MantineProvider, SimpleGrid } from "@mantine/core";
+import {
+  Container,
+  MantineProvider,
+  SimpleGrid,
+  useMantineTheme,
+} from "@mantine/core";
 import TallyCard from "./components/TallyCard";
 import { useEffect, useState } from "react";
 import AddCard from "./components/AddCard";
@@ -8,21 +13,38 @@ import { v4 as uuidv4 } from "uuid";
 import TopBar from "./components/TopBar";
 import { NotificationsProvider } from "@mantine/notifications";
 
-const LOCAL_STORAGE_KEY = "counters";
+const LOCAL_STORAGE_KEY_COUNTERS = "counters";
+const LOCAL_STORAGE_KEY_COLOR = "color";
+
 const DEFAULT_COUNTER = {
   name: "",
   count: 0,
 };
 
 function App() {
-  const storedCounters = localStorage.getItem(LOCAL_STORAGE_KEY) ?? "{}";
+  const storedCounters =
+    localStorage.getItem(LOCAL_STORAGE_KEY_COUNTERS) ?? "{}";
   const [counters, setCounters] = useState<Counters>(() =>
     JSON.parse(storedCounters)
   );
 
+  const [accentColor, setAccentColor] = useState<string>(
+    localStorage.getItem(LOCAL_STORAGE_KEY_COLOR) ??
+      useMantineTheme().colors.teal[5]
+  );
+
   useEffect(
-    () => localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(counters)),
+    () =>
+      localStorage.setItem(
+        LOCAL_STORAGE_KEY_COUNTERS,
+        JSON.stringify(counters)
+      ),
     [counters]
+  );
+
+  useEffect(
+    () => localStorage.setItem(LOCAL_STORAGE_KEY_COLOR, accentColor),
+    [accentColor]
   );
 
   function addCounter() {
@@ -67,7 +89,12 @@ function App() {
       withNormalizeCSS
     >
       <NotificationsProvider>
-        <TopBar counters={counters} setCounters={setCounters} />
+        <TopBar
+          counters={counters}
+          setCounters={setCounters}
+          accentColor={accentColor}
+          setAccentColor={setAccentColor}
+        />
         <Container
           size={1920}
           px="xl"
@@ -93,6 +120,7 @@ function App() {
                 count={counters[counterId].count}
                 setCount={(count) => setCounterValue(counterId, count)}
                 removeFunction={() => removeCounter(counterId)}
+                accentColor={accentColor}
               />
             ))}
             <AddCard addFunction={addCounter} />

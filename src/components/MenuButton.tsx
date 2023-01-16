@@ -9,13 +9,18 @@ import {
 import { Dispatch, SetStateAction, useState } from "react";
 import { Counters } from "../interfaces/counter";
 import RemoveModal from "./RemoveModal";
+import ColorSelector from "./ColorSelector";
 
 export default ({
   counters,
   setCounters,
+  accentColor,
+  setAccentColor,
 }: {
   counters: Counters;
   setCounters: Dispatch<SetStateAction<Counters>>;
+  accentColor: string;
+  setAccentColor: Dispatch<SetStateAction<string>>;
 }) => {
   const theme = useMantineTheme();
 
@@ -35,15 +40,15 @@ export default ({
         onChange={setMenuOpened}
         transition="scale-y"
         position="top-end"
-        width={160}
+        width={200}
         closeOnItemClick={false}
         withinPortal
       >
         <Menu.Target>
           <Button
-            color="teal.4"
+            sx={{ color: accentColor, borderColor: accentColor }}
             variant="outline"
-            rightIcon={<IconChevronDown size={18} stroke={1.5} />}
+            rightIcon={<IconChevronDown size={18} stroke={2} />}
             pr={12}
             loading={loading}
             loaderPosition="right"
@@ -52,6 +57,13 @@ export default ({
           </Button>
         </Menu.Target>
         <Menu.Dropdown>
+          <Menu.Label>Accent color</Menu.Label>
+          <Menu.Item
+            component={ColorSelector}
+            accentColor={accentColor}
+            setAccentColor={setAccentColor}
+          ></Menu.Item>
+          <Menu.Divider />
           <Menu.Label>Backup</Menu.Label>
           <FileButton
             onChange={async (uploadedFile) => {
@@ -89,8 +101,8 @@ export default ({
                 icon={
                   <IconDatabaseImport
                     size={16}
-                    color={theme.colors.teal[4]}
-                    stroke={1.5}
+                    color={accentColor}
+                    stroke={2}
                   />
                 }
                 {...props}
@@ -106,11 +118,7 @@ export default ({
             download="ReacTally.json"
             onClick={() => setMenuOpened(false)}
             icon={
-              <IconDatabaseExport
-                size={16}
-                color={theme.colors.teal[4]}
-                stroke={1.5}
-              />
+              <IconDatabaseExport size={16} color={accentColor} stroke={2} />
             }
           >
             Export
@@ -122,7 +130,7 @@ export default ({
               setRemoveModalOpened(true);
               setMenuOpened(false);
             }}
-            icon={<IconX size={16} color={theme.colors.red[5]} stroke={1.5} />}
+            icon={<IconX size={16} color={theme.colors.red[5]} stroke={2} />}
           >
             Remove all
           </Menu.Item>

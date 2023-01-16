@@ -27,12 +27,14 @@ export default ({
   count,
   setCount,
   removeFunction,
+  accentColor,
 }: {
   name: string;
   setName: (name: string) => void;
   count: number;
   setCount: (count: number) => void;
   removeFunction: () => void;
+  accentColor: string;
 }) => {
   const [editMode, setEditMode] = useState<boolean>(false);
   const [nameInput, setNameInput] = useState<string>("");
@@ -116,7 +118,7 @@ export default ({
         </ActionIcon>
       </Group>
       <Center>
-        <Text fz="72pt" fw={700} c="teal.4">
+        <Text fz="72pt" fw={700} c={accentColor}>
           {count}
         </Text>
       </Center>
@@ -142,7 +144,7 @@ export default ({
             sx={(theme) => ({
               height: "64px",
               "&:active": {
-                backgroundColor: theme.colors.red[6],
+                backgroundColor: theme.colors.red[5],
               },
             })}
           >
@@ -169,7 +171,7 @@ export default ({
             sx={(theme) => ({
               height: "64px",
               "&:active": {
-                backgroundColor: theme.colors.green[6],
+                backgroundColor: theme.colors.green[5],
               },
             })}
           >
