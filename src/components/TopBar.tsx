@@ -1,7 +1,7 @@
 import { Container, Group, Header, Text, Title } from "@mantine/core";
 import { Dispatch, SetStateAction } from "react";
 import { Counters } from "../interfaces/counter";
-import MenuButton from "./MenuButton";
+import MenuButton from "./topBar/MenuButton";
 
 export default ({
   counters,

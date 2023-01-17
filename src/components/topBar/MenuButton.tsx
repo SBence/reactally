@@ -7,9 +7,9 @@ import {
   IconX,
 } from "@tabler/icons";
 import { Dispatch, SetStateAction, useState } from "react";
-import { Counters } from "../interfaces/counter";
-import RemoveModal from "./RemoveModal";
-import ColorSelector from "./ColorSelector";
+import { Counters } from "../../interfaces/counter";
+import RemoveModal from "./menuButton/RemoveModal";
+import ColorSelector from "./menuButton/ColorSelector";
 
 export default ({
   counters,

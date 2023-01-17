@@ -2,7 +2,7 @@ import { Button, Group, Modal, Space, ThemeIcon, Title } from "@mantine/core";
 import { showNotification } from "@mantine/notifications";
 import { IconTrash } from "@tabler/icons";
 import { Dispatch, SetStateAction } from "react";
-import { Counters } from "../interfaces/counter";
+import { Counters } from "../../../interfaces/counter";
 
 export default ({
   opened,
