@@ -112,17 +112,28 @@ export default ({
             )}
           </FileButton>
 
-          <Menu.Item
-            component="a"
-            href={"data:text/json;charset=utf-8," + JSON.stringify(counters)}
-            download="ReacTally.json"
-            onClick={() => setMenuOpened(false)}
-            icon={
-              <IconDatabaseExport size={16} color={accentColor} stroke={2} />
-            }
-          >
-            Export
-          </Menu.Item>
+          {Object.keys(counters).length ? (
+            <Menu.Item
+              component="a"
+              href={"data:text/json;charset=utf-8," + JSON.stringify(counters)}
+              download="ReacTally.json"
+              onClick={() => setMenuOpened(false)}
+              icon={
+                <IconDatabaseExport size={16} color={accentColor} stroke={2} />
+              }
+            >
+              Export
+            </Menu.Item>
+          ) : (
+            <Menu.Item
+              disabled
+              icon={
+                <IconDatabaseExport size={16} color={accentColor} stroke={2} />
+              }
+            >
+              Export
+            </Menu.Item>
+          )}
           <Menu.Divider />
           <Menu.Item
             disabled={!Object.keys(counters).length}
