@@ -1,15 +1,10 @@
-import { Button, FileButton, Menu, useMantineTheme } from "@mantine/core";
-import { showNotification } from "@mantine/notifications";
-import {
-  IconChevronDown,
-  IconDatabaseImport,
-  IconDatabaseExport,
-  IconX,
-} from "@tabler/icons";
+import { Button, Menu, useMantineTheme } from "@mantine/core";
+import { IconChevronDown, IconDatabaseExport, IconX } from "@tabler/icons";
 import { Dispatch, SetStateAction, useState } from "react";
 import { Counters } from "../../interfaces/counter";
 import RemoveModal from "./menuButton/RemoveModal";
 import ColorSelector from "./menuButton/ColorSelector";
+import ImportButton from "./menuButton/ImportButton";
 
 export default ({
   counters,
@@ -26,7 +21,6 @@ export default ({
 
   const [menuOpened, setMenuOpened] = useState(false);
   const [removeModalOpened, setRemoveModalOpened] = useState(false);
-  const [loading, setLoading] = useState(false);
 
   return (
     <>
@@ -50,7 +44,6 @@ export default ({
             variant="outline"
             rightIcon={<IconChevronDown size={18} stroke={2} />}
             pr={12}
-            loading={loading}
             loaderPosition="right"
           >
             Options
@@ -65,53 +58,11 @@ export default ({
           ></Menu.Item>
           <Menu.Divider />
           <Menu.Label>Backup</Menu.Label>
-          <FileButton
-            onChange={async (uploadedFile) => {
-              setLoading(true);
-              const uploadedText = await uploadedFile?.text();
-              if (!uploadedText)
-                return showNotification({
-                  title: "Failed to import file.",
-                  message: "Non-text file uploaded.",
-                  color: "red",
-                });
-              try {
-                const uploadedJson = JSON.parse(uploadedText);
-                setCounters((oldCounters) => {
-                  return { ...oldCounters, ...uploadedJson };
-                });
-                showNotification({
-                  message: "Successfully imported file.",
-                  color: "green",
-                });
-              } catch {
-                showNotification({
-                  title: "Failed to import file.",
-                  message: "Invalid JSON file uploaded.",
-                  color: "red",
-                });
-              }
-              setMenuOpened(false);
-              setLoading(false);
-            }}
-            accept="application/json"
-          >
-            {(props) => (
-              <Menu.Item
-                icon={
-                  <IconDatabaseImport
-                    size={16}
-                    color={accentColor}
-                    stroke={2}
-                  />
-                }
-                {...props}
-              >
-                Import
-              </Menu.Item>
-            )}
-          </FileButton>
-
+          <ImportButton
+            setCounters={setCounters}
+            setMenuOpened={setMenuOpened}
+            accentColor={accentColor}
+          />
           {Object.keys(counters).length ? (
             <Menu.Item
               component="a"
