@@ -1,77 +1,13 @@
 import "./App.css";
-import {
-  Container,
-  MantineProvider,
-  SimpleGrid,
-  useMantineTheme,
-} from "@mantine/core";
-import TallyCard from "./components/TallyCard";
-import { useEffect, useState } from "react";
-import AddCard from "./components/AddCard";
-import { Counters } from "./interfaces/counter";
-import { v4 as uuidv4 } from "uuid";
+import { Container, MantineProvider, SimpleGrid } from "@mantine/core";
+import TallyCard from "./components/cards/TallyCard";
+import AddCard from "./components/cards/AddCard";
 import TopBar from "./components/TopBar";
 import { NotificationsProvider } from "@mantine/notifications";
+import { useAppSelector } from "./store/hooks";
 
-const LOCAL_STORAGE_KEY_COUNTERS = "counters";
-const LOCAL_STORAGE_KEY_COLOR = "color";
-
-const DEFAULT_COUNTER = {
-  name: "",
-  count: 0,
-};
-
-function App() {
-  const storedCounters =
-    localStorage.getItem(LOCAL_STORAGE_KEY_COUNTERS) ?? "{}";
-  const [counters, setCounters] = useState<Counters>(() =>
-    JSON.parse(storedCounters)
-  );
-
-  const [accentColor, setAccentColor] = useState<string>(
-    localStorage.getItem(LOCAL_STORAGE_KEY_COLOR) ??
-      useMantineTheme().colors.teal[5]
-  );
-
-  useEffect(
-    () =>
-      localStorage.setItem(
-        LOCAL_STORAGE_KEY_COUNTERS,
-        JSON.stringify(counters)
-      ),
-    [counters]
-  );
-
-  useEffect(
-    () => localStorage.setItem(LOCAL_STORAGE_KEY_COLOR, accentColor),
-    [accentColor]
-  );
-
-  function addCounter() {
-    setCounters((oldCounters) => {
-      return {
-        ...oldCounters,
-        [uuidv4()]: DEFAULT_COUNTER,
-      };
-    });
-  }
-  function removeCounter(id: string) {
-    setCounters((oldCounters) => {
-      const newCounters = { ...oldCounters };
-      delete newCounters[id];
-      return newCounters;
-    });
-  }
-  function setCounterValue(id: string, count: number) {
-    setCounters((oldCounters) => {
-      return { ...oldCounters, [id]: { ...oldCounters[id], count } };
-    });
-  }
-  function setCounterName(id: string, name: string) {
-    setCounters((oldCounters) => {
-      return { ...oldCounters, [id]: { ...oldCounters[id], name } };
-    });
-  }
+export default () => {
+  const counters = useAppSelector((state) => state.counters);
 
   return (
     <MantineProvider
@@ -89,12 +25,7 @@ function App() {
       withNormalizeCSS
     >
       <NotificationsProvider>
-        <TopBar
-          counters={counters}
-          setCounters={setCounters}
-          accentColor={accentColor}
-          setAccentColor={setAccentColor}
-        />
+        <TopBar />
         <Container
           size={1920}
           px="xl"
@@ -112,23 +43,13 @@ function App() {
               { minWidth: "xl", cols: 6 },
             ]}
           >
-            {Object.keys(counters).map((counterId) => (
-              <TallyCard
-                key={counterId}
-                name={counters[counterId].name}
-                setName={(name) => setCounterName(counterId, name)}
-                count={counters[counterId].count}
-                setCount={(count) => setCounterValue(counterId, count)}
-                removeFunction={() => removeCounter(counterId)}
-                accentColor={accentColor}
-              />
+            {Object.keys(counters).map((id) => (
+              <TallyCard key={id} id={id} />
             ))}
-            <AddCard addFunction={addCounter} />
+            <AddCard />
           </SimpleGrid>
         </Container>
       </NotificationsProvider>
     </MantineProvider>
   );
-}
-
-export default App;
+};

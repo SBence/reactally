@@ -16,29 +16,29 @@ import {
   IconTrash,
 } from "@tabler/icons";
 import { useEffect, useRef, useState } from "react";
-import VIBRATION_STRENGTH from "../constants/VibrationStrength";
+import VIBRATION_STRENGTH from "../../constants/VibrationStrength";
+import { useAppDispatch, useAppSelector } from "../../store/hooks";
+import {
+  decrement,
+  increment,
+  remove,
+  reset,
+  setName,
+} from "../../store/slices/countersSlice";
 
 const MAX_COUNT = 99999;
 const MAX_NAME_LENGTH = 32;
 
-export default ({
-  name,
-  setName,
-  count,
-  setCount,
-  removeFunction,
-  accentColor,
-}: {
-  name: string;
-  setName: (name: string) => void;
-  count: number;
-  setCount: (count: number) => void;
-  removeFunction: () => void;
-  accentColor: string;
-}) => {
+export default ({ id }: { id: string }) => {
   const [editMode, setEditMode] = useState<boolean>(false);
   const [nameInput, setNameInput] = useState<string>("");
   const nameInputRef = useRef<HTMLInputElement>(null);
+
+  const dispatch = useAppDispatch();
+
+  const accentColor = useAppSelector((state) => state.accentColor);
+  const count = useAppSelector((state) => state.counters[id].count);
+  const name = useAppSelector((state) => state.counters[id].name);
 
   useEffect(() => {
     if (editMode && nameInputRef.current) {
@@ -74,7 +74,8 @@ export default ({
             enterKeyHint="done"
             onKeyDown={(event) => {
               if (event.key === "Enter" || event.key === "Escape") {
-                if (event.key === "Enter") setName(nameInput);
+                if (event.key === "Enter")
+                  dispatch(setName({ id, name: nameInput }));
                 setEditMode(false);
               }
             }}
@@ -98,7 +99,9 @@ export default ({
           size="lg"
           radius="md"
           onClick={() => {
-            editMode ? setName(nameInput) : setNameInput(name);
+            editMode
+              ? dispatch(setName({ id, name: nameInput }))
+              : setNameInput(name);
             setEditMode(!editMode);
           }}
           onPointerDown={() => navigator.vibrate(VIBRATION_STRENGTH.weak)}
@@ -110,7 +113,7 @@ export default ({
           color="red.5"
           size="lg"
           radius="md"
-          onClick={() => removeFunction()}
+          onClick={() => dispatch(remove({ id }))}
           onPointerDown={() => navigator.vibrate(VIBRATION_STRENGTH.medium)}
           onPointerUp={() => navigator.vibrate(VIBRATION_STRENGTH.strong)}
         >
@@ -132,9 +135,9 @@ export default ({
           })}
         >
           <ActionIcon
-            onClick={() => setCount(count - 1)}
+            onClick={() => dispatch(decrement({ id }))}
             onPointerDown={() => navigator.vibrate(VIBRATION_STRENGTH.weak)}
-            onContextMenu={() => setCount(0)}
+            onContextMenu={() => dispatch(reset({ id }))}
             onPointerUp={() => navigator.vibrate(VIBRATION_STRENGTH.medium)}
             disabled={!count}
             color="dark.4"
@@ -160,7 +163,7 @@ export default ({
           })}
         >
           <ActionIcon
-            onClick={() => setCount(count + 1)}
+            onClick={() => dispatch(increment({ id }))}
             onPointerDown={() => navigator.vibrate(VIBRATION_STRENGTH.weak)}
             onPointerUp={() => navigator.vibrate(VIBRATION_STRENGTH.medium)}
             disabled={count >= MAX_COUNT}

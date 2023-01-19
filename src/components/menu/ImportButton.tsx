@@ -2,17 +2,18 @@ import { FileButton, Menu } from "@mantine/core";
 import { showNotification } from "@mantine/notifications";
 import { IconDatabaseImport } from "@tabler/icons";
 import { Dispatch, SetStateAction } from "react";
-import { Counters } from "../../../interfaces/counter";
+import { useAppDispatch, useAppSelector } from "../../store/hooks";
+import { appendSet } from "../../store/slices/countersSlice";
 
 export default ({
-  setCounters,
   setMenuOpened,
-  accentColor,
 }: {
-  setCounters: Dispatch<SetStateAction<Counters>>;
   setMenuOpened: Dispatch<SetStateAction<boolean>>;
-  accentColor: string;
 }) => {
+  const dispatch = useAppDispatch();
+
+  const accentColor = useAppSelector((state) => state.accentColor);
+
   return (
     <FileButton
       onChange={async (uploadedFile) => {
@@ -25,9 +26,7 @@ export default ({
           });
         try {
           const uploadedJson = JSON.parse(uploadedText);
-          setCounters((oldCounters) => {
-            return { ...oldCounters, ...uploadedJson };
-          });
+          dispatch(appendSet({ counters: uploadedJson }));
           showNotification({
             message: "Successfully imported file.",
             color: "green",

@@ -2,17 +2,18 @@ import { Button, Group, Modal, Space, ThemeIcon, Title } from "@mantine/core";
 import { showNotification } from "@mantine/notifications";
 import { IconTrash } from "@tabler/icons";
 import { Dispatch, SetStateAction } from "react";
-import { Counters } from "../../../interfaces/counter";
+import { useAppDispatch } from "../../store/hooks";
+import { removeAll } from "../../store/slices/countersSlice";
 
 export default ({
   opened,
   setOpened,
-  setCounters,
 }: {
   opened: boolean;
   setOpened: Dispatch<SetStateAction<boolean>>;
-  setCounters: Dispatch<SetStateAction<Counters>>;
 }) => {
+  const dispatch = useAppDispatch();
+
   return (
     <Modal
       opened={opened}
@@ -37,7 +38,7 @@ export default ({
           color="red"
           onClick={() => {
             setOpened(false);
-            setCounters({});
+            dispatch(removeAll());
             showNotification({
               message: "Removed all counters.",
             });

@@ -1,19 +1,10 @@
 import { Container, Group, Header, Text, Title } from "@mantine/core";
-import { Dispatch, SetStateAction } from "react";
-import { Counters } from "../interfaces/counter";
-import MenuButton from "./topBar/MenuButton";
+import { useAppSelector } from "../store/hooks";
+import MenuButton from "./menu/MenuButton";
 
-export default ({
-  counters,
-  setCounters,
-  accentColor,
-  setAccentColor,
-}: {
-  counters: Counters;
-  setCounters: Dispatch<SetStateAction<Counters>>;
-  accentColor: string;
-  setAccentColor: Dispatch<SetStateAction<string>>;
-}) => {
+export default () => {
+  const accentColor = useAppSelector((state) => state.accentColor);
+
   return (
     <Header height={64}>
       <Container
@@ -35,12 +26,7 @@ export default ({
               Tally
             </Text>
           </Title>
-          <MenuButton
-            counters={counters}
-            setCounters={setCounters}
-            accentColor={accentColor}
-            setAccentColor={setAccentColor}
-          />
+          <MenuButton />
         </Group>
       </Container>
     </Header>
