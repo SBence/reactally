@@ -1,55 +1,39 @@
 import "./App.css";
-import { Container, MantineProvider, SimpleGrid } from "@mantine/core";
+import { Container, SimpleGrid } from "@mantine/core";
 import TallyCard from "./components/cards/TallyCard";
 import AddCard from "./components/cards/AddCard";
 import TopBar from "./components/TopBar";
-import { NotificationsProvider } from "@mantine/notifications";
 import { useAppSelector } from "./store/hooks";
 
 export default () => {
   const counters = useAppSelector((state) => state.counters);
 
   return (
-    <MantineProvider
-      theme={{
-        colorScheme: "dark",
-        breakpoints: {
-          xs: 680,
-          sm: 980,
-          md: 1300,
-          lg: 1620,
-          xl: 1940,
-        },
-      }}
-      withGlobalStyles
-      withNormalizeCSS
-    >
-      <NotificationsProvider>
-        <TopBar />
-        <Container
-          size={1920}
-          px="xl"
-          sx={(theme) => ({
-            paddingTop: theme.spacing.xl,
-            paddingBottom: theme.spacing.xl,
-          })}
+    <>
+      <TopBar />
+      <Container
+        size={1920}
+        px="xl"
+        sx={(theme) => ({
+          paddingTop: theme.spacing.xl,
+          paddingBottom: theme.spacing.xl,
+        })}
+      >
+        <SimpleGrid
+          breakpoints={[
+            { minWidth: "xs", cols: 2 },
+            { minWidth: "sm", cols: 3 },
+            { minWidth: "md", cols: 4 },
+            { minWidth: "lg", cols: 5 },
+            { minWidth: "xl", cols: 6 },
+          ]}
         >
-          <SimpleGrid
-            breakpoints={[
-              { minWidth: "xs", cols: 2 },
-              { minWidth: "sm", cols: 3 },
-              { minWidth: "md", cols: 4 },
-              { minWidth: "lg", cols: 5 },
-              { minWidth: "xl", cols: 6 },
-            ]}
-          >
-            {Object.keys(counters).map((id) => (
-              <TallyCard key={id} id={id} />
-            ))}
-            <AddCard />
-          </SimpleGrid>
-        </Container>
-      </NotificationsProvider>
-    </MantineProvider>
+          {Object.keys(counters).map((id) => (
+            <TallyCard key={id} id={id} />
+          ))}
+          <AddCard />
+        </SimpleGrid>
+      </Container>
+    </>
   );
 };

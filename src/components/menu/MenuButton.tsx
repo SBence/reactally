@@ -20,7 +20,7 @@ export default () => {
       <Menu
         opened={menuOpened}
         onChange={setMenuOpened}
-        transition="scale-y"
+        transitionProps={{ transition: "scale-y" }}
         position="top-end"
         width={200}
         closeOnItemClick={false}

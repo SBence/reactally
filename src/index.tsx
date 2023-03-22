@@ -5,6 +5,8 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { Provider } from "react-redux";
 import { store } from "./store/store";
+import { MantineProvider } from "@mantine/core";
+import { Notifications } from "@mantine/notifications";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -12,7 +14,23 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-      <App />
+      <MantineProvider
+        theme={{
+          colorScheme: "dark",
+          breakpoints: {
+            xs: "680",
+            sm: "980",
+            md: "1300",
+            lg: "1620",
+            xl: "1940",
+          },
+        }}
+        withGlobalStyles
+        withNormalizeCSS
+      >
+        <Notifications />
+        <App />
+      </MantineProvider>
     </Provider>
   </React.StrictMode>
 );

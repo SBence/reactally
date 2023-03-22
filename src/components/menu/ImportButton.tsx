@@ -1,5 +1,5 @@
 import { FileButton, Menu } from "@mantine/core";
-import { showNotification } from "@mantine/notifications";
+import { notifications } from "@mantine/notifications";
 import { IconDatabaseImport } from "@tabler/icons";
 import { Dispatch, SetStateAction } from "react";
 import { useAppDispatch, useAppSelector } from "../../store/hooks";
@@ -19,7 +19,7 @@ export default ({
       onChange={async (uploadedFile) => {
         const uploadedText = await uploadedFile?.text();
         if (!uploadedText)
-          return showNotification({
+          return notifications.show({
             title: "Failed to import file.",
             message: "Non-text file uploaded.",
             color: "red",
@@ -27,12 +27,12 @@ export default ({
         try {
           const uploadedJson = JSON.parse(uploadedText);
           dispatch(appendSet({ counters: uploadedJson }));
-          showNotification({
+          notifications.show({
             message: "Successfully imported file.",
             color: "green",
           });
         } catch {
-          showNotification({
+          notifications.show({
             title: "Failed to import file.",
             message: "Invalid JSON file uploaded.",
             color: "red",

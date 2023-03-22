@@ -1,5 +1,5 @@
 import { Button, Group, Modal, Space, ThemeIcon, Title } from "@mantine/core";
-import { showNotification } from "@mantine/notifications";
+import { notifications } from "@mantine/notifications";
 import { IconTrash } from "@tabler/icons";
 import { Dispatch, SetStateAction } from "react";
 import { useAppDispatch } from "../../store/hooks";
@@ -39,7 +39,7 @@ export default ({
           onClick={() => {
             setOpened(false);
             dispatch(removeAll());
-            showNotification({
+            notifications.show({
               message: "Removed all counters.",
             });
           }}
