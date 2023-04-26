@@ -1,5 +1,5 @@
 import { Center, MediaQuery, Paper } from "@mantine/core";
-import { IconPlus } from "@tabler/icons";
+import { IconPlus } from "@tabler/icons-react";
 import VIBRATION_STRENGTH from "../../constants/VibrationStrength";
 import { useAppDispatch } from "../../store/hooks";
 import { addNew } from "../../store/slices/countersSlice";

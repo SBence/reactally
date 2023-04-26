@@ -1,5 +1,5 @@
 import { Button, Menu } from "@mantine/core";
-import { IconChevronDown } from "@tabler/icons";
+import { IconChevronDown } from "@tabler/icons-react";
 import { useState } from "react";
 import { useAppSelector } from "../../store/hooks";
 import RemoveModal from "./RemoveModal";

@@ -1,6 +1,6 @@
 import { Button, Group, Modal, Space, ThemeIcon, Title } from "@mantine/core";
 import { notifications } from "@mantine/notifications";
-import { IconTrash } from "@tabler/icons";
+import { IconTrash } from "@tabler/icons-react";
 import { Dispatch, SetStateAction } from "react";
 import { useAppDispatch } from "../../store/hooks";
 import { removeAll } from "../../store/slices/countersSlice";

@@ -14,7 +14,7 @@ import {
   IconChevronUp,
   IconEdit,
   IconTrash,
-} from "@tabler/icons";
+} from "@tabler/icons-react";
 import { useEffect, useRef, useState } from "react";
 import VIBRATION_STRENGTH from "../../constants/VibrationStrength";
 import { useAppDispatch, useAppSelector } from "../../store/hooks";

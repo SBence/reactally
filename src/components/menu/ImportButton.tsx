@@ -1,6 +1,6 @@
 import { FileButton, Menu } from "@mantine/core";
 import { notifications } from "@mantine/notifications";
-import { IconDatabaseImport } from "@tabler/icons";
+import { IconDatabaseImport } from "@tabler/icons-react";
 import { Dispatch, SetStateAction } from "react";
 import { useAppDispatch, useAppSelector } from "../../store/hooks";
 import { appendSet } from "../../store/slices/countersSlice";

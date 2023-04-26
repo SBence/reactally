@@ -1,5 +1,5 @@
 import { Menu, useMantineTheme } from "@mantine/core";
-import { IconDatabaseExport, IconX } from "@tabler/icons";
+import { IconDatabaseExport, IconX } from "@tabler/icons-react";
 import { Dispatch, SetStateAction } from "react";
 import { useAppSelector } from "../../store/hooks";
 import ColorSelector from "./ColorSelector";
