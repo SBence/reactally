@@ -1,5 +1,5 @@
 export default {
-  weak: 25,
-  medium: 50,
-  strong: 100,
+  weak: 5,
+  medium: 10,
+  strong: 25,
 };
