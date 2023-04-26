@@ -6,7 +6,13 @@ export default () => {
   const accentColor = useAppSelector((state) => state.accentColor);
 
   return (
-    <Header height={64}>
+    <Header
+      height={64}
+      sx={() => ({
+        WebkitUserSelect: "none",
+        userSelect: "none",
+      })}
+    >
       <Container
         px="xl"
         size={1280}
