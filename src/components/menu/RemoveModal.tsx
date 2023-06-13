@@ -5,13 +5,13 @@ import { Dispatch, SetStateAction } from "react";
 import { useAppDispatch } from "../../store/hooks";
 import { removeAll } from "../../store/slices/countersSlice";
 
-export default ({
+export default function RemoveModal({
   opened,
   setOpened,
 }: {
   opened: boolean;
   setOpened: Dispatch<SetStateAction<boolean>>;
-}) => {
+}) {
   const dispatch = useAppDispatch();
 
   return (
@@ -49,4 +49,4 @@ export default ({
       </Group>
     </Modal>
   );
-};
+}

@@ -5,13 +5,13 @@ import { useAppSelector } from "../../store/hooks";
 import ColorSelector from "./ColorSelector";
 import ImportButton from "./ImportButton";
 
-export default ({
+export default function MenuItems({
   setMenuOpened,
   setRemoveModalOpened,
 }: {
   setMenuOpened: Dispatch<SetStateAction<boolean>>;
   setRemoveModalOpened: Dispatch<SetStateAction<boolean>>;
-}) => {
+}) {
   const theme = useMantineTheme();
 
   const counters = useAppSelector((state) => state.counters);
@@ -55,4 +55,4 @@ export default ({
       </Menu.Item>
     </>
   );
-};
+}

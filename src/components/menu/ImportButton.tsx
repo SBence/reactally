@@ -5,11 +5,11 @@ import { Dispatch, SetStateAction } from "react";
 import { useAppDispatch, useAppSelector } from "../../store/hooks";
 import { appendSet } from "../../store/slices/countersSlice";
 
-export default ({
+export default function ImportButton({
   setMenuOpened,
 }: {
   setMenuOpened: Dispatch<SetStateAction<boolean>>;
-}) => {
+}) {
   const dispatch = useAppDispatch();
 
   const accentColor = useAppSelector((state) => state.accentColor);
@@ -52,4 +52,4 @@ export default ({
       )}
     </FileButton>
   );
-};
+}

@@ -4,7 +4,7 @@ import VIBRATION_STRENGTH from "../../constants/VibrationStrength";
 import { useAppDispatch } from "../../store/hooks";
 import { addNew } from "../../store/slices/countersSlice";
 
-export default () => {
+export default function AddCard() {
   const dispatch = useAppDispatch();
 
   return (
@@ -38,4 +38,4 @@ export default () => {
       </Paper>
     </MediaQuery>
   );
-};
+}

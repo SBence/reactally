@@ -7,7 +7,7 @@ export const accentColorSlice = createSlice({
   name,
   initialState,
   reducers: {
-    changeTo: (state, action: PayloadAction<string>) => {
+    changeTo: (_state, action: PayloadAction<string>) => {
       return action.payload;
     },
   },

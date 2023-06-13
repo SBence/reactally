@@ -29,7 +29,7 @@ import {
 const MAX_COUNT = 99999;
 const MAX_NAME_LENGTH = 32;
 
-export default ({ id }: { id: string }) => {
+export default function TallyCard({ id }: { id: string }) {
   const [editMode, setEditMode] = useState<boolean>(false);
   const [nameInput, setNameInput] = useState<string>("");
   const nameInputRef = useRef<HTMLInputElement>(null);
@@ -184,4 +184,4 @@ export default ({ id }: { id: string }) => {
       </Group>
     </Paper>
   );
-};
+}

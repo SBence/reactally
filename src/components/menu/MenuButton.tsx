@@ -5,7 +5,7 @@ import { useAppSelector } from "../../store/hooks";
 import RemoveModal from "./RemoveModal";
 import MenuItems from "./MenuItems";
 
-export default () => {
+export default function MenuButton() {
   const [menuOpened, setMenuOpened] = useState(false);
   const [removeModalOpened, setRemoveModalOpened] = useState(false);
 
@@ -46,4 +46,4 @@ export default () => {
       </Menu>
     </>
   );
-};
+}

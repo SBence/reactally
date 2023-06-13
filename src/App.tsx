@@ -1,11 +1,10 @@
-import "./App.css";
 import { Container, SimpleGrid } from "@mantine/core";
 import TallyCard from "./components/cards/TallyCard";
 import AddCard from "./components/cards/AddCard";
 import TopBar from "./components/TopBar";
 import { useAppSelector } from "./store/hooks";
 
-export default () => {
+export default function App() {
   const counters = useAppSelector((state) => state.counters);
 
   return (
@@ -36,4 +35,4 @@ export default () => {
       </Container>
     </>
   );
-};
+}

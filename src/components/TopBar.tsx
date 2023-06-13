@@ -2,7 +2,7 @@ import { Container, Group, Header, Text, Title } from "@mantine/core";
 import { useAppSelector } from "../store/hooks";
 import MenuButton from "./menu/MenuButton";
 
-export default () => {
+export default function TopBar() {
   const accentColor = useAppSelector((state) => state.accentColor);
 
   return (
@@ -37,4 +37,4 @@ export default () => {
       </Container>
     </Header>
   );
-};
+}

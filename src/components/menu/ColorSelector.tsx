@@ -2,7 +2,7 @@ import { CheckIcon, ColorSwatch, Group, useMantineTheme } from "@mantine/core";
 import { useAppDispatch, useAppSelector } from "../../store/hooks";
 import { changeTo } from "../../store/slices/accentColorSlice";
 
-export default () => {
+export default function ColorSelector() {
   const dispatch = useAppDispatch();
   const theme = useMantineTheme();
 
@@ -32,4 +32,4 @@ export default () => {
       {swatches}
     </Group>
   );
-};
+}
