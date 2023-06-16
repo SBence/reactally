@@ -28,7 +28,7 @@ export default function ImportButton({
           const uploadedJson = JSON.parse(uploadedText);
           dispatch(appendSet({ counters: uploadedJson }));
           notifications.show({
-            message: "Successfully imported file.",
+            message: "Successfully imported backup.",
             color: "green",
           });
         } catch {
