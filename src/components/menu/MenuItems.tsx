@@ -3,7 +3,7 @@ import { IconDatabaseExport, IconX } from "@tabler/icons-react";
 import { Dispatch, SetStateAction } from "react";
 import { useAppSelector } from "../../store/hooks";
 import ColorSelector from "./ColorSelector";
-import ImportButton from "./ImportButton";
+import RestoreButton from "./RestoreButton";
 
 export default function MenuItems({
   setMenuOpened,
@@ -22,8 +22,6 @@ export default function MenuItems({
       <Menu.Label>Accent color</Menu.Label>
       <ColorSelector />
       <Menu.Divider />
-      <Menu.Label>Backup</Menu.Label>
-      <ImportButton setMenuOpened={setMenuOpened} />
       {Object.keys(counters).length ? (
         <Menu.Item
           component="a"
@@ -32,16 +30,17 @@ export default function MenuItems({
           onClick={() => setMenuOpened(false)}
           icon={<IconDatabaseExport size={16} color={accentColor} stroke={2} />}
         >
-          Export
+          Backup
         </Menu.Item>
       ) : (
         <Menu.Item
           disabled
           icon={<IconDatabaseExport size={16} color={accentColor} stroke={2} />}
         >
-          Export
+          Backup
         </Menu.Item>
       )}
+      <RestoreButton setMenuOpened={setMenuOpened} />
       <Menu.Divider />
       <Menu.Item
         disabled={!Object.keys(counters).length}
