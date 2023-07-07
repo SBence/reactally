@@ -13,7 +13,7 @@ export const store = configureStore({
 });
 
 store.subscribe(() =>
-  localStorage.setItem("state", JSON.stringify(store.getState()))
+  localStorage.setItem("state", JSON.stringify(store.getState())),
 );
 
 export type RootState = ReturnType<typeof store.getState>;
