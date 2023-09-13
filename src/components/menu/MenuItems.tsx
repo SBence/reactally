@@ -30,7 +30,9 @@ export default function MenuItems({
           component="a"
           href={"data:text/json;charset=utf-8," + JSON.stringify(counters)}
           download="ReacTally.json"
-          onClick={() => setMenuOpened(false)}
+          onClick={() => {
+            setMenuOpened(false);
+          }}
           icon={<IconDatabaseExport size={16} color={accentColor} stroke={2} />}
         >
           <Trans>Backup</Trans>

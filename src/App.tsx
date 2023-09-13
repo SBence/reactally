@@ -12,7 +12,7 @@ export default function App() {
   const counters = useAppSelector((state) => state.counters);
 
   useEffect(() => {
-    dynamicActivate();
+    void dynamicActivate();
   }, []);
 
   return (

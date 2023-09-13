@@ -18,7 +18,9 @@ export default function RemoveModal({
   return (
     <Modal
       opened={opened}
-      onClose={() => setOpened(false)}
+      onClose={() => {
+        setOpened(false);
+      }}
       size="auto"
       withCloseButton={false}
     >
@@ -32,7 +34,12 @@ export default function RemoveModal({
       </Group>
       <Space h="xl" />
       <Group position="right">
-        <Button color="gray" onClick={() => setOpened(false)}>
+        <Button
+          color="gray"
+          onClick={() => {
+            setOpened(false);
+          }}
+        >
           <Trans>Cancel</Trans>
         </Button>
         <Button

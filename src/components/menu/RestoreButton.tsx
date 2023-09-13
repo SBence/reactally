@@ -19,12 +19,14 @@ export default function RestoreButton({
     <FileButton
       onChange={async (uploadedFile) => {
         const uploadedText = await uploadedFile?.text();
-        if (!uploadedText)
-          return notifications.show({
+        if (!uploadedText) {
+          notifications.show({
             title: t`Failed to restore backup.`,
             message: t`Non-text file uploaded.`,
             color: "red",
           });
+          return;
+        }
         try {
           const uploadedJson = JSON.parse(uploadedText);
           dispatch(appendSet({ counters: uploadedJson }));

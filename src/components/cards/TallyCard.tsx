@@ -57,14 +57,18 @@ export default function TallyCard({ id }: { id: string }) {
         WebkitUserSelect: "none",
         userSelect: "none",
       })}
-      onContextMenu={(event) => event.preventDefault()}
+      onContextMenu={(event) => {
+        event.preventDefault();
+      }}
     >
       <Group position="apart">
         {editMode ? (
           <TextInput
             ref={nameInputRef}
             value={nameInput}
-            onChange={(event) => setNameInput(event.currentTarget.value)}
+            onChange={(event) => {
+              setNameInput(event.currentTarget.value);
+            }}
             sx={() => ({
               flexBasis: 0,
               flexGrow: 1,

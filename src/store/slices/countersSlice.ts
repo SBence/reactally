@@ -6,9 +6,7 @@ interface Counter {
   count: number;
 }
 
-interface Counters {
-  [id: string]: Counter;
-}
+type Counters = Record<string, Counter>;
 
 const DEFAULT_COUNTER = {
   name: "",

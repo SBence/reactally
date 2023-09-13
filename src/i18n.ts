@@ -12,6 +12,7 @@ export async function dynamicActivate() {
     ) ?? defaultLocale,
   );
   const { messages } = await import(`./locales/${locale}.ts`);
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
   i18n.load(locale, messages);
   i18n.activate(locale);
 }
