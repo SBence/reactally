@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useAppSelector } from "../../store/hooks";
 import RemoveModal from "./RemoveModal";
 import MenuItems from "./MenuItems";
+import { Trans } from "@lingui/macro";
 
 export default function MenuButton() {
   const [menuOpened, setMenuOpened] = useState(false);
@@ -34,7 +35,7 @@ export default function MenuButton() {
             pr={12}
             loaderPosition="right"
           >
-            Options
+            <Trans>Options</Trans>
           </Button>
         </Menu.Target>
         <Menu.Dropdown>

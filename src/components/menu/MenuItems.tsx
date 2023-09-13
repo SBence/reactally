@@ -4,6 +4,7 @@ import { Dispatch, SetStateAction } from "react";
 import { useAppSelector } from "../../store/hooks";
 import ColorSelector from "./ColorSelector";
 import RestoreButton from "./RestoreButton";
+import { Trans } from "@lingui/macro";
 
 export default function MenuItems({
   setMenuOpened,
@@ -19,7 +20,9 @@ export default function MenuItems({
 
   return (
     <>
-      <Menu.Label>Accent color</Menu.Label>
+      <Menu.Label>
+        <Trans>Accent color</Trans>
+      </Menu.Label>
       <ColorSelector />
       <Menu.Divider />
       {Object.keys(counters).length ? (
@@ -30,14 +33,14 @@ export default function MenuItems({
           onClick={() => setMenuOpened(false)}
           icon={<IconDatabaseExport size={16} color={accentColor} stroke={2} />}
         >
-          Backup
+          <Trans>Backup</Trans>
         </Menu.Item>
       ) : (
         <Menu.Item
           disabled
           icon={<IconDatabaseExport size={16} color={accentColor} stroke={2} />}
         >
-          Backup
+          <Trans>Backup</Trans>
         </Menu.Item>
       )}
       <RestoreButton setMenuOpened={setMenuOpened} />
@@ -50,7 +53,7 @@ export default function MenuItems({
         }}
         icon={<IconX size={16} color={theme.colors.red[5]} stroke={2} />}
       >
-        Remove all
+        <Trans>Remove all</Trans>
       </Menu.Item>
     </>
   );

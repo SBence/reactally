@@ -4,6 +4,7 @@ import { IconTrash } from "@tabler/icons-react";
 import { Dispatch, SetStateAction } from "react";
 import { useAppDispatch } from "../../store/hooks";
 import { removeAll } from "../../store/slices/countersSlice";
+import { t, Trans } from "@lingui/macro";
 
 export default function RemoveModal({
   opened,
@@ -26,13 +27,13 @@ export default function RemoveModal({
           <IconTrash size={24} />
         </ThemeIcon>
         <Title order={4} align="center">
-          Remove all counters?
+          <Trans>Remove all counters?</Trans>
         </Title>
       </Group>
       <Space h="xl" />
       <Group position="right">
         <Button color="gray" onClick={() => setOpened(false)}>
-          Cancel
+          <Trans>Cancel</Trans>
         </Button>
         <Button
           color="red"
@@ -40,11 +41,11 @@ export default function RemoveModal({
             setOpened(false);
             dispatch(removeAll());
             notifications.show({
-              message: "Removed all counters.",
+              message: t`Removed all counters.`,
             });
           }}
         >
-          Remove
+          <Trans>Remove</Trans>
         </Button>
       </Group>
     </Modal>

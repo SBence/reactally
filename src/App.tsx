@@ -3,12 +3,20 @@ import TallyCard from "./components/cards/TallyCard";
 import AddCard from "./components/cards/AddCard";
 import TopBar from "./components/TopBar";
 import { useAppSelector } from "./store/hooks";
+import { i18n } from "@lingui/core";
+import { I18nProvider } from "@lingui/react";
+import { useEffect } from "react";
+import { dynamicActivate } from "./i18n";
 
 export default function App() {
   const counters = useAppSelector((state) => state.counters);
 
+  useEffect(() => {
+    dynamicActivate();
+  }, []);
+
   return (
-    <>
+    <I18nProvider i18n={i18n}>
       <TopBar />
       <Container
         size={1920}
@@ -33,6 +41,6 @@ export default function App() {
           <AddCard />
         </SimpleGrid>
       </Container>
-    </>
+    </I18nProvider>
   );
 }
