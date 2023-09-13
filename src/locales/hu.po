@@ -1,0 +1,68 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2023-09-13 13:06+0200\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: hu\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
+
+#: src/components/menu/MenuItems.tsx:24
+msgid "Accent color"
+msgstr "Kiemelőszín"
+
+#: src/components/menu/MenuItems.tsx:36
+#: src/components/menu/MenuItems.tsx:43
+msgid "Backup"
+msgstr "Biztonsági mentés"
+
+#: src/components/menu/RemoveModal.tsx:36
+msgid "Cancel"
+msgstr "Mégse"
+
+#: src/components/menu/RestoreButton.tsx:24
+#: src/components/menu/RestoreButton.tsx:37
+msgid "Failed to restore backup."
+msgstr "Visszaállítás sikertelen."
+
+#: src/components/menu/RestoreButton.tsx:38
+msgid "Invalid JSON file uploaded."
+msgstr "A feltöltött fájl nem JSON formátumú."
+
+#: src/components/menu/RestoreButton.tsx:25
+msgid "Non-text file uploaded."
+msgstr "A feltöltött fájl formátuma nem megfelelő."
+
+#: src/components/menu/MenuButton.tsx:38
+msgid "Options"
+msgstr "Beállítások"
+
+#: src/components/menu/RemoveModal.tsx:48
+msgid "Remove"
+msgstr "Törlés"
+
+#: src/components/menu/MenuItems.tsx:56
+msgid "Remove all"
+msgstr "Összes törlése"
+
+#: src/components/menu/RemoveModal.tsx:30
+msgid "Remove all counters?"
+msgstr "Törli az összes számlálót?"
+
+#: src/components/menu/RemoveModal.tsx:44
+msgid "Removed all counters."
+msgstr "Összes számláló törölve."
+
+#: src/components/menu/RestoreButton.tsx:51
+msgid "Restore"
+msgstr "Mentés visszaállítása"
+
+#: src/components/menu/RestoreButton.tsx:32
+msgid "Successfully restored backup."
+msgstr "Sikeres visszaállítás."
