@@ -38,6 +38,7 @@ module.exports = {
       {
         ignore: ["(Reac)|(Tally)"],
         ignoreAttribute: ["download", "query"],
+        ignoreFunction: ["useMediaQuery"],
       },
     ],
     "lingui/t-call-in-function": "error",

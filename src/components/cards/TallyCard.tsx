@@ -2,7 +2,6 @@ import {
   ActionIcon,
   Center,
   Group,
-  MediaQuery,
   Paper,
   Text,
   TextInput,
@@ -29,7 +28,13 @@ import {
 const MAX_COUNT = 99999;
 const MAX_NAME_LENGTH = 32;
 
-export default function TallyCard({ id }: { id: string }) {
+export default function TallyCard({
+  id,
+  canHover,
+}: {
+  id: string;
+  canHover: boolean;
+}) {
   const [editMode, setEditMode] = useState<boolean>(false);
   const [nameInput, setNameInput] = useState<string>("");
   const nameInputRef = useRef<HTMLInputElement>(null);
@@ -52,7 +57,7 @@ export default function TallyCard({ id }: { id: string }) {
       shadow="xs"
       radius="md"
       p="md"
-      sx={(theme) => ({
+      style={(theme) => ({
         backgroundColor: theme.colors.dark[6],
         WebkitUserSelect: "none",
         userSelect: "none",
@@ -61,7 +66,7 @@ export default function TallyCard({ id }: { id: string }) {
         event.preventDefault();
       }}
     >
-      <Group position="apart">
+      <Group justify="space-between">
         {editMode ? (
           <TextInput
             ref={nameInputRef}
@@ -69,11 +74,11 @@ export default function TallyCard({ id }: { id: string }) {
             onChange={(event) => {
               setNameInput(event.currentTarget.value);
             }}
-            sx={() => ({
+            style={{
               flexBasis: 0,
               flexGrow: 1,
               height: "34px",
-            })}
+            }}
             maxLength={MAX_NAME_LENGTH}
             enterKeyHint="done"
             onKeyDown={(event) => {
@@ -87,19 +92,20 @@ export default function TallyCard({ id }: { id: string }) {
         ) : (
           <Title
             order={3}
-            sx={() => ({
+            style={{
               flexBasis: 0,
               flexGrow: 1,
               whiteSpace: "nowrap",
               overflow: "hidden",
               textOverflow: "ellipsis",
-            })}
+            }}
           >
             {name}
           </Title>
         )}
         <ActionIcon
-          color={editMode ? "green.3" : "dark"}
+          color={editMode ? "green.3" : "gray"}
+          variant="subtle"
           size="lg"
           radius="md"
           onClick={() => {
@@ -115,6 +121,7 @@ export default function TallyCard({ id }: { id: string }) {
         </ActionIcon>
         <ActionIcon
           color="red.5"
+          variant="subtle"
           size="lg"
           radius="md"
           onClick={() => dispatch(remove({ id }))}
@@ -129,62 +136,45 @@ export default function TallyCard({ id }: { id: string }) {
           {count}
         </Text>
       </Center>
-      <Group position="apart" grow>
-        <MediaQuery
-          query="(hover: hover)"
-          styles={(theme) => ({
-            "&:hover": {
-              backgroundColor: theme.colors.dark[3],
-            },
-          })}
+      <Group justify="space-between" grow>
+        <ActionIcon
+          className={`${
+            count && `active-red ${canHover && "tally-card-hover-highlight"}`
+          }`}
+          onClick={() => dispatch(decrement({ id }))}
+          onPointerDown={() => navigator.vibrate(VIBRATION_STRENGTH.weak)}
+          onContextMenu={() => dispatch(reset({ id }))}
+          onPointerUp={() => navigator.vibrate(VIBRATION_STRENGTH.medium)}
+          disabled={!count}
+          color="dark.4"
+          size="xl"
+          radius="md"
+          variant="filled"
+          style={{
+            height: "64px",
+          }}
         >
-          <ActionIcon
-            onClick={() => dispatch(decrement({ id }))}
-            onPointerDown={() => navigator.vibrate(VIBRATION_STRENGTH.weak)}
-            onContextMenu={() => dispatch(reset({ id }))}
-            onPointerUp={() => navigator.vibrate(VIBRATION_STRENGTH.medium)}
-            disabled={!count}
-            color="dark.4"
-            size="xl"
-            radius="md"
-            variant="filled"
-            sx={(theme) => ({
-              height: "64px",
-              "&:active": {
-                backgroundColor: theme.colors.red[5],
-              },
-            })}
-          >
-            <IconChevronDown size={48} />
-          </ActionIcon>
-        </MediaQuery>
-        <MediaQuery
-          query="(hover: hover)"
-          styles={(theme) => ({
-            "&:hover": {
-              backgroundColor: theme.colors.dark[3],
-            },
-          })}
+          <IconChevronDown size={48} />
+        </ActionIcon>
+        <ActionIcon
+          className={`${
+            count < MAX_COUNT &&
+            `active-green ${canHover && "tally-card-hover-highlight"}`
+          }`}
+          onClick={() => dispatch(increment({ id }))}
+          onPointerDown={() => navigator.vibrate(VIBRATION_STRENGTH.weak)}
+          onPointerUp={() => navigator.vibrate(VIBRATION_STRENGTH.medium)}
+          disabled={count >= MAX_COUNT}
+          color="dark.4"
+          size="xl"
+          radius="md"
+          variant="filled"
+          style={{
+            height: "64px",
+          }}
         >
-          <ActionIcon
-            onClick={() => dispatch(increment({ id }))}
-            onPointerDown={() => navigator.vibrate(VIBRATION_STRENGTH.weak)}
-            onPointerUp={() => navigator.vibrate(VIBRATION_STRENGTH.medium)}
-            disabled={count >= MAX_COUNT}
-            color="dark.4"
-            size="xl"
-            radius="md"
-            variant="filled"
-            sx={(theme) => ({
-              height: "64px",
-              "&:active": {
-                backgroundColor: theme.colors.green[5],
-              },
-            })}
-          >
-            <IconChevronUp size={48} />
-          </ActionIcon>
-        </MediaQuery>
+          <IconChevronUp size={48} />
+        </ActionIcon>
       </Group>
     </Paper>
   );

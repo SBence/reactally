@@ -33,14 +33,18 @@ export default function MenuItems({
           onClick={() => {
             setMenuOpened(false);
           }}
-          icon={<IconDatabaseExport size={16} color={accentColor} stroke={2} />}
+          leftSection={
+            <IconDatabaseExport size={16} color={accentColor} stroke={2} />
+          }
         >
           <Trans>Backup</Trans>
         </Menu.Item>
       ) : (
         <Menu.Item
           disabled
-          icon={<IconDatabaseExport size={16} color={accentColor} stroke={2} />}
+          leftSection={
+            <IconDatabaseExport size={16} color={accentColor} stroke={2} />
+          }
         >
           <Trans>Backup</Trans>
         </Menu.Item>
@@ -53,7 +57,7 @@ export default function MenuItems({
           setRemoveModalOpened(true);
           setMenuOpened(false);
         }}
-        icon={<IconX size={16} color={theme.colors.red[5]} stroke={2} />}
+        leftSection={<IconX size={16} color={theme.colors.red[5]} stroke={2} />}
       >
         <Trans>Remove all</Trans>
       </Menu.Item>

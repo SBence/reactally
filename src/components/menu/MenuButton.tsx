@@ -29,11 +29,10 @@ export default function MenuButton() {
       >
         <Menu.Target>
           <Button
-            sx={{ color: accentColor, borderColor: accentColor }}
+            style={{ color: accentColor, borderColor: accentColor }}
             variant="outline"
-            rightIcon={<IconChevronDown size={18} stroke={2} />}
+            rightSection={<IconChevronDown size={18} stroke={2} />}
             pr={12}
-            loaderPosition="right"
           >
             <Trans>Options</Trans>
           </Button>

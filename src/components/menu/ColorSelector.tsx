@@ -22,9 +22,9 @@ export default function ColorSelector() {
 
   return (
     <Group
-      position="center"
-      spacing="xs"
-      sx={(theme) => ({
+      justify="center"
+      gap="xs"
+      style={(theme) => ({
         paddingTop: theme.spacing.xs,
         paddingBottom: theme.spacing.xs,
       })}

@@ -47,7 +47,9 @@ export default function RestoreButton({
     >
       {(props) => (
         <Menu.Item
-          icon={<IconDatabaseImport size={16} color={accentColor} stroke={2} />}
+          leftSection={
+            <IconDatabaseImport size={16} color={accentColor} stroke={2} />
+          }
           {...props}
         >
           <Trans>Restore</Trans>

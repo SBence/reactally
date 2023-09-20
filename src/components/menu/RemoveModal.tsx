@@ -28,12 +28,12 @@ export default function RemoveModal({
         <ThemeIcon variant="light" size="xl" radius="xl" color="red">
           <IconTrash size={24} />
         </ThemeIcon>
-        <Title order={4} align="center">
+        <Title order={4}>
           <Trans>Remove all counters?</Trans>
         </Title>
       </Group>
       <Space h="xl" />
-      <Group position="right">
+      <Group justify="right">
         <Button
           color="gray"
           onClick={() => {

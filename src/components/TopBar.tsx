@@ -1,4 +1,4 @@
-import { Container, Group, Header, Text, Title } from "@mantine/core";
+import { Box, Container, Group, Title } from "@mantine/core";
 import { useAppSelector } from "../store/hooks";
 import MenuButton from "./menu/MenuButton";
 
@@ -6,35 +6,40 @@ export default function TopBar() {
   const accentColor = useAppSelector((state) => state.accentColor);
 
   return (
-    <Header
-      height={64}
-      sx={() => ({
+    <Box
+      component="header"
+      style={(theme) => ({
+        height: "64px",
         WebkitUserSelect: "none",
         userSelect: "none",
+        borderBottomColor: theme.colors.dark[5],
+        borderBottomStyle: "solid",
+        borderBottomWidth: "0.8px",
       })}
     >
       <Container
         px="xl"
         size={1280}
-        sx={() => ({
+        style={{
           height: "100%",
-        })}
+          width: "100%",
+        }}
       >
         <Group
-          position="apart"
-          sx={() => ({
+          justify="space-between"
+          style={{
             height: "100%",
-          })}
+          }}
         >
-          <Title order={2}>
-            <Text component="span">Reac</Text>
-            <Text color={accentColor} component="span">
+          <Group gap={0}>
+            <Title order={2}>Reac</Title>
+            <Title c={accentColor} order={2}>
               Tally
-            </Text>
-          </Title>
+            </Title>
+          </Group>
           <MenuButton />
         </Group>
       </Container>
-    </Header>
+    </Box>
   );
 }
