@@ -32,8 +32,14 @@ jobs:
       - name: Install dependencies
         run: yarn install
 
+      - name: Downcase repository owner
+        run: |
+          echo "REPOSITORY_OWNER=${GITHUB_REPOSITORY_OWNER,,}" >> "$GITHUB_ENV"
+
       - name: Build project
         run: yarn run build --base=/${{ github.event.repository.name }}/
+        env:
+          PUBLIC_URL: https://${{ env.REPOSITORY_OWNER }}.github.io/${{ github.event.repository.name }}/
 
       - name: Setup Pages
         uses: actions/configure-pages@v3
