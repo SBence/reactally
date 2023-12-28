@@ -1,14 +1,14 @@
-import { configureStore } from "@reduxjs/toolkit";
+import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import accentColorSlice from "./slices/accentColorSlice";
 import countersSlice from "./slices/countersSlice";
 
 const savedState = localStorage.getItem("state");
 
 export const store = configureStore({
-  reducer: {
+  reducer: combineReducers({
     accentColor: accentColorSlice,
     counters: countersSlice,
-  },
+  }),
   preloadedState: savedState ? JSON.parse(savedState) : undefined,
 });
 

@@ -20,12 +20,12 @@
     "@mantine/core": "^7.0.0",
     "@mantine/hooks": "^7.0.0",
     "@mantine/notifications": "^7.0.0",
-    "@reduxjs/toolkit": "^1.9.5",
+    "@reduxjs/toolkit": "^2.0.1",
     "@tabler/icons-react": "^2.22.0",
     "@types/uuid": "^9.0.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-redux": "^8.0.7",
+    "react-redux": "^9.0.4",
     "uuid": "^9.0.0"
   },
   "devDependencies": {
