@@ -5,6 +5,8 @@ import { Dispatch, SetStateAction } from "react";
 import { useAppDispatch, useAppSelector } from "../../store/hooks";
 import { appendSet } from "../../store/slices/countersSlice";
 import { t, Trans } from "@lingui/macro";
+import safeLoadJson from "../../utils/safeLoadJson";
+import isCounters from "../../types/predicates/isCounters";
 
 export default function RestoreButton({
   setMenuOpened,
@@ -28,7 +30,8 @@ export default function RestoreButton({
           return;
         }
         try {
-          const uploadedJson = JSON.parse(uploadedText);
+          const uploadedJson = safeLoadJson(uploadedText, isCounters);
+          if (!uploadedJson) throw new Error();
           dispatch(appendSet({ counters: uploadedJson }));
           notifications.show({
             message: t`Successfully restored backup.`,

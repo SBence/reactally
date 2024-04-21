@@ -32,7 +32,6 @@ module.exports = {
         },
       },
     ],
-    "@typescript-eslint/no-unsafe-assignment": "off",
     "lingui/no-unlocalized-strings": [
       "error",
       {

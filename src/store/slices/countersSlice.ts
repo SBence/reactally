@@ -1,12 +1,6 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { v4 as uuidv4 } from "uuid";
-
-interface Counter {
-  name: string;
-  count: number;
-}
-
-type Counters = Record<string, Counter>;
+import { Counters } from "../../types/Counters";
 
 const DEFAULT_COUNTER = {
   name: "",
