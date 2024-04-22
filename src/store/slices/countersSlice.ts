@@ -18,6 +18,7 @@ export const countersSlice = createSlice({
       state[uuidv4()] = DEFAULT_COUNTER;
     },
     remove: (state, action: PayloadAction<{ id: string }>) => {
+      // eslint-disable-next-line @typescript-eslint/no-dynamic-delete
       delete state[action.payload.id];
     },
     setName: (state, action: PayloadAction<{ id: string; name: string }>) => {
