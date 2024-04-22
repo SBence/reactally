@@ -24,6 +24,7 @@ import {
   reset,
   setName,
 } from "../../store/slices/countersSlice";
+import clsx from "clsx";
 
 const MAX_COUNT = 99999;
 const MAX_NAME_LENGTH = 32;
@@ -138,9 +139,9 @@ export default function TallyCard({
       </Center>
       <Group justify="space-between" grow>
         <ActionIcon
-          className={`${
-            count && `active-red ${canHover && "tally-card-hover-highlight"}`
-          }`}
+          className={clsx(
+            count && ["active-red", canHover && "tally-card-hover-highlight"],
+          )}
           onClick={() => dispatch(decrement({ id }))}
           onPointerDown={() => navigator.vibrate(VIBRATION_STRENGTH.weak)}
           onContextMenu={() => dispatch(reset({ id }))}
@@ -157,10 +158,12 @@ export default function TallyCard({
           <IconChevronDown size={48} />
         </ActionIcon>
         <ActionIcon
-          className={`${
-            count < MAX_COUNT &&
-            `active-green ${canHover && "tally-card-hover-highlight"}`
-          }`}
+          className={clsx(
+            count < MAX_COUNT && [
+              "active-green",
+              canHover && "tally-card-hover-highlight",
+            ],
+          )}
           onClick={() => dispatch(increment({ id }))}
           onPointerDown={() => navigator.vibrate(VIBRATION_STRENGTH.weak)}
           onPointerUp={() => navigator.vibrate(VIBRATION_STRENGTH.medium)}
