@@ -1,4 +1,4 @@
-name: Check PRs, merge Dependabot updates
+name: Auto-merge Dependabot updates
 
 on: pull_request
 
@@ -7,44 +7,18 @@ permissions:
   pull-requests: write
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Use Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: "*"
-          cache: "yarn"
-
-      - name: Install dependencies
-        run: yarn install
-
-      - name: Downcase repository owner
-        run: |
-          echo "REPOSITORY_OWNER=${GITHUB_REPOSITORY_OWNER,,}" >> "$GITHUB_ENV"
-
-      - name: Build project
-        run: yarn run build --base=/${{ github.event.repository.name }}/
-        env:
-          PUBLIC_URL: https://${{ env.REPOSITORY_OWNER }}.github.io/${{ github.event.repository.name }}/
-
-  merge:
-    needs: build
+  enable-auto-merge:
     runs-on: ubuntu-latest
     if: github.actor == 'dependabot[bot]'
 
     steps:
-      - name: Dependabot metadata
+      - name: Fetch metadata
         id: metadata
         uses: dependabot/fetch-metadata@v2
         with:
           github-token: "${{ secrets.GITHUB_TOKEN }}"
 
-      - name: Auto-merge Dependabot PRs
+      - name: Enable auto-merge
         if: contains(fromJSON('["version-update:semver-minor", "version-update:semver-patch"]'), steps.metadata.outputs.update-type)
         run: gh pr merge --auto --rebase "$PR_URL"
         env:

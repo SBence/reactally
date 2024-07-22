@@ -1,0 +1,33 @@
+name: Build project
+
+on: pull_request
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "*"
+          cache: "yarn"
+
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Downcase repository owner
+        run: |
+          echo "REPOSITORY_OWNER=${GITHUB_REPOSITORY_OWNER,,}" >> "$GITHUB_ENV"
+
+      - name: Build project
+        run: yarn run build --base=/${{ github.event.repository.name }}/
+        env:
+          PUBLIC_URL: https://${{ env.REPOSITORY_OWNER }}.github.io/${{ github.event.repository.name }}/
