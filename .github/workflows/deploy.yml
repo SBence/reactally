@@ -3,6 +3,8 @@ name: Deploy static content to Pages
 on:
   push:
     branches: ["master"]
+    paths-ignore:
+      - ".**"
 
   workflow_dispatch:
 
