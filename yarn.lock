@@ -678,30 +678,30 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
-"@lingui/babel-plugin-extract-messages@4.11.2":
-  version "4.11.2"
-  resolved "https://registry.yarnpkg.com/@lingui/babel-plugin-extract-messages/-/babel-plugin-extract-messages-4.11.2.tgz#c262c427e3533b28befb1e939ef4d029de1a543c"
-  integrity sha512-CjIUy55ICw2nQpJeO9Yhoc65nbDje3b/8Ghbux8OUMbtEYguMKi1pA21eYPYDjTUnjglVTDtapEtLN0iNPWHdg==
+"@lingui/babel-plugin-extract-messages@4.11.3":
+  version "4.11.3"
+  resolved "https://registry.yarnpkg.com/@lingui/babel-plugin-extract-messages/-/babel-plugin-extract-messages-4.11.3.tgz#f112fb07436c77ef98daf0198bc45851301e57f6"
+  integrity sha512-wLiquhtxE7qUmoKl4UStFI1XgrCkk9zwxc8z62LPpbutkyxO21B5k8fBUGlgWoKJaXbpvS8VIU8j2663q99JnQ==
 
-"@lingui/cli@4.11.2", "@lingui/cli@^4.4.2":
-  version "4.11.2"
-  resolved "https://registry.yarnpkg.com/@lingui/cli/-/cli-4.11.2.tgz#3d0e828493925315148475ba10ff12b48a5eb26e"
-  integrity sha512-onwASvA6KffAos+ceP1K1Hx0mPg6vb3s9Rw7VXSyaUQih225GXlrTZbYKOZkM1XgfMmhN+7kgFrRaqxjiKnLLQ==
+"@lingui/cli@4.11.3", "@lingui/cli@^4.4.2":
+  version "4.11.3"
+  resolved "https://registry.yarnpkg.com/@lingui/cli/-/cli-4.11.3.tgz#5450e84be9b4f91928dd13e5061b8eec8d449a8c"
+  integrity sha512-ykJLmQciK81I0Cd/iLg8dSpESV9Hnsbw5+G98IEAf4exvoUGRJ2UzkeNc/HeGx3D5Fg+TI8YNWwCbZ7NAOsDCQ==
   dependencies:
     "@babel/core" "^7.21.0"
     "@babel/generator" "^7.21.1"
     "@babel/parser" "^7.21.2"
     "@babel/runtime" "^7.21.0"
     "@babel/types" "^7.21.2"
-    "@lingui/babel-plugin-extract-messages" "4.11.2"
-    "@lingui/conf" "4.11.2"
-    "@lingui/core" "4.11.2"
-    "@lingui/format-po" "4.11.2"
-    "@lingui/message-utils" "4.11.2"
+    "@lingui/babel-plugin-extract-messages" "4.11.3"
+    "@lingui/conf" "4.11.3"
+    "@lingui/core" "4.11.3"
+    "@lingui/format-po" "4.11.3"
+    "@lingui/message-utils" "4.11.3"
     babel-plugin-macros "^3.0.1"
     chalk "^4.1.0"
     chokidar "3.5.1"
-    cli-table "0.3.6"
+    cli-table "^0.3.11"
     commander "^10.0.0"
     convert-source-map "^2.0.0"
     date-fns "^3.6.0"
@@ -730,6 +730,18 @@
     jiti "^1.17.1"
     lodash.get "^4.4.2"
 
+"@lingui/conf@4.11.3":
+  version "4.11.3"
+  resolved "https://registry.yarnpkg.com/@lingui/conf/-/conf-4.11.3.tgz#d4ae631a59186f7868d20346fa6c998b9f1f8984"
+  integrity sha512-KwUJDrbzlZEXmlmqttpB/Sd9hiIo0sqccsZaYTHzW/uULZT9T11aw/f6RcPLCVJeSKazg/7dJhR1cKlxKzvjKA==
+  dependencies:
+    "@babel/runtime" "^7.20.13"
+    chalk "^4.1.0"
+    cosmiconfig "^8.0.0"
+    jest-validate "^29.4.3"
+    jiti "^1.17.1"
+    lodash.get "^4.4.2"
+
 "@lingui/core@4.11.2":
   version "4.11.2"
   resolved "https://registry.yarnpkg.com/@lingui/core/-/core-4.11.2.tgz#0d9d35e8ac975a6a7c910116e6153c5a49db37f2"
@@ -739,13 +751,22 @@
     "@lingui/message-utils" "4.11.2"
     unraw "^3.0.0"
 
-"@lingui/format-po@4.11.2":
-  version "4.11.2"
-  resolved "https://registry.yarnpkg.com/@lingui/format-po/-/format-po-4.11.2.tgz#fd6e724bd439417eb76849195d794f68bc793525"
-  integrity sha512-o5TxpiIjtwObkOipsuNw3zaiHlikhivFfd70paps4Nb5w0Fiaa6pKqvLmIqgsxx7/bgmySr0S/vu8hpAerr4Kg==
+"@lingui/core@4.11.3":
+  version "4.11.3"
+  resolved "https://registry.yarnpkg.com/@lingui/core/-/core-4.11.3.tgz#67776f47b557ad460f5f6f4736cc62eb0c99576e"
+  integrity sha512-IjJxn0Kvzv+ICnGlMqn8wRIQLikCJVrolb1oyi6GqtbiuPiwKYeU0D6Hbe146lMaTN8juc3tOCBS+Fr02XqFIQ==
   dependencies:
-    "@lingui/conf" "4.11.2"
-    "@lingui/message-utils" "4.11.2"
+    "@babel/runtime" "^7.20.13"
+    "@lingui/message-utils" "4.11.3"
+    unraw "^3.0.0"
+
+"@lingui/format-po@4.11.3":
+  version "4.11.3"
+  resolved "https://registry.yarnpkg.com/@lingui/format-po/-/format-po-4.11.3.tgz#cf2e845e4ebc2d7f58a5200be3168aac79e9778f"
+  integrity sha512-RgEkoo0aEAk7X1xGrApcpqkz6GLdzkRLGw2jo3mmCVR0P7P9sWbJL/cd01GmR+HzAOo8Zx5oIayaKh9iyJS8tA==
+  dependencies:
+    "@lingui/conf" "4.11.3"
+    "@lingui/message-utils" "4.11.3"
     date-fns "^3.6.0"
     pofile "^1.1.4"
 
@@ -768,6 +789,14 @@
     "@messageformat/parser" "^5.0.0"
     js-sha256 "^0.10.1"
 
+"@lingui/message-utils@4.11.3":
+  version "4.11.3"
+  resolved "https://registry.yarnpkg.com/@lingui/message-utils/-/message-utils-4.11.3.tgz#842948926c64fa40ea0c5602173ea11252ed4072"
+  integrity sha512-ZSw3OoKbknOw3nSrqt194g2F8r0guKow9csb46zlL7zX/yOWCaj767wvSvMoglZtVvurfQs4NPv2cohYlWORNw==
+  dependencies:
+    "@messageformat/parser" "^5.0.0"
+    js-sha256 "^0.10.1"
+
 "@lingui/react@^4.4.2":
   version "4.11.2"
   resolved "https://registry.yarnpkg.com/@lingui/react/-/react-4.11.2.tgz#7c1a2babbd7f41edef499925c056e9c3eb3a8342"
@@ -776,13 +805,13 @@
     "@babel/runtime" "^7.20.13"
     "@lingui/core" "4.11.2"
 
-"@lingui/vite-plugin@^4.4.2":
-  version "4.11.2"
-  resolved "https://registry.yarnpkg.com/@lingui/vite-plugin/-/vite-plugin-4.11.2.tgz#b57fdb73e2d0b73749c8b6adfabd93a58cec961c"
-  integrity sha512-Z2EqvJZKtm1oioGgIVoTeHQos+tsOauvmSj41prhbHBpWq4OxuMutqho+sJPbE27lVDIAO5ac3NknqXQGEAd3A==
+"@lingui/vite-plugin@^4.11.3":
+  version "4.11.3"
+  resolved "https://registry.yarnpkg.com/@lingui/vite-plugin/-/vite-plugin-4.11.3.tgz#69942e4496a3656a5460294e431ea22070d30f41"
+  integrity sha512-CNPtcXN/pdM8jXKLZFwazCczK7DagwcLvYL8WRt6m0wxpaMcR2s15/Sp/S6gL0PN8OXHykSzcg9nBMgXfgMaHw==
   dependencies:
-    "@lingui/cli" "4.11.2"
-    "@lingui/conf" "4.11.2"
+    "@lingui/cli" "4.11.3"
+    "@lingui/conf" "4.11.3"
 
 "@mantine/core@^7.0.0":
   version "7.11.2"
@@ -1559,10 +1588,10 @@ cli-spinners@^2.5.0:
   resolved "https://registry.yarnpkg.com/cli-spinners/-/cli-spinners-2.9.2.tgz#1773a8f4b9c4d6ac31563df53b3fc1d79462fe41"
   integrity sha512-ywqV+5MmyL4E7ybXgKys4DugZbX0FC6LnwrhjuykIjnK9k8OQacQ7axGKnjDXWNhns0xot3bZI5h55H8yo9cJg==
 
-cli-table@0.3.6:
-  version "0.3.6"
-  resolved "https://registry.yarnpkg.com/cli-table/-/cli-table-0.3.6.tgz#e9d6aa859c7fe636981fd3787378c2a20bce92fc"
-  integrity sha512-ZkNZbnZjKERTY5NwC2SeMeLeifSPq/pubeRoTpdr3WchLlnZg6hEgvHkK5zL7KNFdd9PmHN8lxrENUwI3cE8vQ==
+cli-table@^0.3.11:
+  version "0.3.11"
+  resolved "https://registry.yarnpkg.com/cli-table/-/cli-table-0.3.11.tgz#ac69cdecbe81dccdba4889b9a18b7da312a9d3ee"
+  integrity sha512-IqLQi4lO0nIB4tcdTpN4LCB9FI3uqrJZK7RC515EnhZ6qBaglkIgICb1wjeAqpdoOabm1+SuQtkXIPdYC93jhQ==
   dependencies:
     colors "1.0.3"
 
