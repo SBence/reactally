@@ -30,7 +30,7 @@
     "uuid": "^10.0.0"
   },
   "devDependencies": {
-    "@lingui/cli": "^4.4.2",
+    "@lingui/cli": "^4.11.3",
     "@lingui/vite-plugin": "^4.4.2",
     "@types/react": "^18.0.37",
     "@types/react-dom": "^18.0.11",
