@@ -797,13 +797,13 @@
     "@messageformat/parser" "^5.0.0"
     js-sha256 "^0.10.1"
 
-"@lingui/react@^4.4.2":
-  version "4.11.2"
-  resolved "https://registry.yarnpkg.com/@lingui/react/-/react-4.11.2.tgz#7c1a2babbd7f41edef499925c056e9c3eb3a8342"
-  integrity sha512-OKHCg3yPW2xhYWoY2kOz+eP7qpdkab+4tERUvJ9QJ9bzQ6OnPLCagaRftB3nqdKuWzKoA5F2VG2QLUhF7DjpGA==
+"@lingui/react@^4.11.3":
+  version "4.11.3"
+  resolved "https://registry.yarnpkg.com/@lingui/react/-/react-4.11.3.tgz#408dfbc2c5a60cf5392e30e0d21333ca61bade7f"
+  integrity sha512-FuorwDsz5zDpUNpyj7J8ZKqJrrVxOz1EtQ3aJGJsmnTtVO01N3nR3ckMzpYvZ71XXdDEvhUC9ihmiKbFvpaZ/w==
   dependencies:
     "@babel/runtime" "^7.20.13"
-    "@lingui/core" "4.11.2"
+    "@lingui/core" "4.11.3"
 
 "@lingui/vite-plugin@^4.11.3":
   version "4.11.3"

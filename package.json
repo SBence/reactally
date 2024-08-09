@@ -16,7 +16,7 @@
   "dependencies": {
     "@emotion/react": "^11.13.0",
     "@lingui/macro": "^4.4.2",
-    "@lingui/react": "^4.4.2",
+    "@lingui/react": "^4.11.3",
     "@mantine/core": "^7.0.0",
     "@mantine/hooks": "^7.0.0",
     "@mantine/notifications": "^7.0.0",
