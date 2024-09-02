@@ -718,18 +718,6 @@
     ramda "^0.27.1"
     source-map "^0.8.0-beta.0"
 
-"@lingui/conf@4.11.3":
-  version "4.11.3"
-  resolved "https://registry.yarnpkg.com/@lingui/conf/-/conf-4.11.3.tgz#d4ae631a59186f7868d20346fa6c998b9f1f8984"
-  integrity sha512-KwUJDrbzlZEXmlmqttpB/Sd9hiIo0sqccsZaYTHzW/uULZT9T11aw/f6RcPLCVJeSKazg/7dJhR1cKlxKzvjKA==
-  dependencies:
-    "@babel/runtime" "^7.20.13"
-    chalk "^4.1.0"
-    cosmiconfig "^8.0.0"
-    jest-validate "^29.4.3"
-    jiti "^1.17.1"
-    lodash.get "^4.4.2"
-
 "@lingui/conf@4.11.4":
   version "4.11.4"
   resolved "https://registry.yarnpkg.com/@lingui/conf/-/conf-4.11.4.tgz#5a6cc1305e5bc51292197f4f3f58aa9bc8f0c329"
@@ -741,15 +729,6 @@
     jest-validate "^29.4.3"
     jiti "^1.17.1"
     lodash.get "^4.4.2"
-
-"@lingui/core@4.11.3":
-  version "4.11.3"
-  resolved "https://registry.yarnpkg.com/@lingui/core/-/core-4.11.3.tgz#67776f47b557ad460f5f6f4736cc62eb0c99576e"
-  integrity sha512-IjJxn0Kvzv+ICnGlMqn8wRIQLikCJVrolb1oyi6GqtbiuPiwKYeU0D6Hbe146lMaTN8juc3tOCBS+Fr02XqFIQ==
-  dependencies:
-    "@babel/runtime" "^7.20.13"
-    "@lingui/message-utils" "4.11.3"
-    unraw "^3.0.0"
 
 "@lingui/core@4.11.4":
   version "4.11.4"
@@ -781,14 +760,6 @@
     "@lingui/core" "4.11.4"
     "@lingui/message-utils" "4.11.4"
 
-"@lingui/message-utils@4.11.3":
-  version "4.11.3"
-  resolved "https://registry.yarnpkg.com/@lingui/message-utils/-/message-utils-4.11.3.tgz#842948926c64fa40ea0c5602173ea11252ed4072"
-  integrity sha512-ZSw3OoKbknOw3nSrqt194g2F8r0guKow9csb46zlL7zX/yOWCaj767wvSvMoglZtVvurfQs4NPv2cohYlWORNw==
-  dependencies:
-    "@messageformat/parser" "^5.0.0"
-    js-sha256 "^0.10.1"
-
 "@lingui/message-utils@4.11.4":
   version "4.11.4"
   resolved "https://registry.yarnpkg.com/@lingui/message-utils/-/message-utils-4.11.4.tgz#a10b55df6d5f79bf188a16009e8ee3a2e4162f31"
@@ -797,13 +768,13 @@
     "@messageformat/parser" "^5.0.0"
     js-sha256 "^0.10.1"
 
-"@lingui/react@^4.11.3":
-  version "4.11.3"
-  resolved "https://registry.yarnpkg.com/@lingui/react/-/react-4.11.3.tgz#408dfbc2c5a60cf5392e30e0d21333ca61bade7f"
-  integrity sha512-FuorwDsz5zDpUNpyj7J8ZKqJrrVxOz1EtQ3aJGJsmnTtVO01N3nR3ckMzpYvZ71XXdDEvhUC9ihmiKbFvpaZ/w==
+"@lingui/react@^4.11.4":
+  version "4.11.4"
+  resolved "https://registry.yarnpkg.com/@lingui/react/-/react-4.11.4.tgz#4e2df27e7546a5e1c68b651629e5808871d27d02"
+  integrity sha512-f7re4HhjI6CLBV1CY/PcI3VYP5zS4rtfU33speWnfkymsxGIXQv4ol3BqrgPLGhypMl2nKcL5nfL+LewrLIW8g==
   dependencies:
     "@babel/runtime" "^7.20.13"
-    "@lingui/core" "4.11.3"
+    "@lingui/core" "4.11.4"
 
 "@lingui/vite-plugin@^4.11.4":
   version "4.11.4"
