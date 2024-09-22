@@ -110,9 +110,11 @@ export default function TallyCard({
           size="lg"
           radius="md"
           onClick={() => {
-            editMode
-              ? dispatch(setName({ id, name: nameInput }))
-              : setNameInput(name);
+            if (editMode) {
+              dispatch(setName({ id, name: nameInput }));
+            } else {
+              setNameInput(name);
+            }
             setEditMode(!editMode);
           }}
           onPointerDown={() => navigator.vibrate(VIBRATION_STRENGTH.weak)}
