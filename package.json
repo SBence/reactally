@@ -21,7 +21,7 @@
     "@mantine/hooks": "^7.13.3",
     "@mantine/notifications": "^7.13.3",
     "@reduxjs/toolkit": "^2.3.0",
-    "@tabler/icons-react": "^3.19.0",
+    "@tabler/icons-react": "~3.18.0",
     "@types/uuid": "^10.0.0",
     "clsx": "^2.1.0",
     "react": "^18.2.0",
