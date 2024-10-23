@@ -944,17 +944,17 @@
   resolved "https://registry.yarnpkg.com/@sinclair/typebox/-/typebox-0.27.8.tgz#6667fac16c436b5434a387a34dedb013198f6e6e"
   integrity sha512-+Fj43pSMwJs4KRrH/938Uf+uAELIgVBmQzg/q1YG10djyfA3TnrU8N8XzqCh/okZdszqBQTZf96idMfE5lnwTA==
 
-"@tabler/icons-react@~3.18.0":
-  version "3.18.0"
-  resolved "https://registry.yarnpkg.com/@tabler/icons-react/-/icons-react-3.18.0.tgz#fdc2423900321f4864ade19112abd2dd4b825755"
-  integrity sha512-2gGMWJe67T7q6Sgb+4r/OsAjbq6hH30D6D2l02kOnl9kAauSsp/u6Gx1zteQ/GiwqRYSTEIhYMOhOV4LLa8rAw==
+"@tabler/icons-react@~3.20.0":
+  version "3.20.0"
+  resolved "https://registry.yarnpkg.com/@tabler/icons-react/-/icons-react-3.20.0.tgz#302b918056eda15055e3ef150c783d6741793f50"
+  integrity sha512-a47oaL48bb5Cx/WUVfg/NZrsWwFExrcDQO8thUZ7S6h/OQYFu7sm4E5pZsmUtGCjikB3lRzjtmMD+C4s7mr9yw==
   dependencies:
-    "@tabler/icons" "3.18.0"
+    "@tabler/icons" "3.20.0"
 
-"@tabler/icons@3.18.0":
-  version "3.18.0"
-  resolved "https://registry.yarnpkg.com/@tabler/icons/-/icons-3.18.0.tgz#9531d3ec7541facd584a22fb695bd65b896484a0"
-  integrity sha512-zLuwTs/xjQSsGh1X5Pt6qytvM8r6lFpWo5aAiDgnX2ekrOshNs4d87PcJEkP3555gaKy0ZftgckxPzedrN00fQ==
+"@tabler/icons@3.20.0":
+  version "3.20.0"
+  resolved "https://registry.yarnpkg.com/@tabler/icons/-/icons-3.20.0.tgz#51149c8c7f006ea55f86f3ad3613b20965069444"
+  integrity sha512-nXSeUzsCOxX/Of+kdUVQfxL9bG+ck8XCWNf9dGSpE+nhVexRwk/4HiDQDxFDysfT7vfgSut6GXnrZsU5M5dSlA==
 
 "@types/babel__core@^7.20.5":
   version "7.20.5"
@@ -1042,10 +1042,10 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react@*", "@types/react@^18.3.11":
-  version "18.3.11"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-18.3.11.tgz#9d530601ff843ee0d7030d4227ea4360236bd537"
-  integrity sha512-r6QZ069rFTjrEYgFdOck1gK7FLVsgJE7tTz0pQBczlBNUhBNk0MQH4UbnFSwjpQLMkLzgqvBBa+qGpLje16eTQ==
+"@types/react@*", "@types/react@^18.3.12":
+  version "18.3.12"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-18.3.12.tgz#99419f182ccd69151813b7ee24b792fe08774f60"
+  integrity sha512-D2wOSq/d6Agt28q7rSI3jhU7G6aiuzljDGZ2hTZHIkrTLUI+AF3WMeKkEZ9nN2fkBAlcktT6vcZjDFiIhMYEQw==
   dependencies:
     "@types/prop-types" "*"
     csstype "^3.0.2"
@@ -3299,10 +3299,10 @@ vite-plugin-html@^3.2.0:
     node-html-parser "^5.3.3"
     pathe "^0.2.0"
 
-vite@^5.4.9:
-  version "5.4.9"
-  resolved "https://registry.yarnpkg.com/vite/-/vite-5.4.9.tgz#215c80cbebfd09ccbb9ceb8c0621391c9abdc19c"
-  integrity sha512-20OVpJHh0PAM0oSOELa5GaZNWeDjcAvQjGXy2Uyr+Tp+/D2/Hdz6NLgpJLsarPTA2QJ6v8mX2P1ZfbsSKvdMkg==
+vite@^5.4.10:
+  version "5.4.10"
+  resolved "https://registry.yarnpkg.com/vite/-/vite-5.4.10.tgz#d358a7bd8beda6cf0f3b7a450a8c7693a4f80c18"
+  integrity sha512-1hvaPshuPUtxeQ0hsVH3Mud0ZanOLwVTneA1EgbAM5LhaZEqyPWGRQ7BtaMvUrTDeEaC8pxtj6a6jku3x4z6SQ==
   dependencies:
     esbuild "^0.21.3"
     postcss "^8.4.43"
