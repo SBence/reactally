@@ -787,10 +787,10 @@
     "@lingui/cli" "4.14.0"
     "@lingui/conf" "4.14.0"
 
-"@mantine/core@^7.13.5":
-  version "7.13.5"
-  resolved "https://registry.yarnpkg.com/@mantine/core/-/core-7.13.5.tgz#8d171434f70bb5b7f6544379a46ab5f5f03e4967"
-  integrity sha512-1m0C0qH9eIWJZy19M06kKNWbbSLZhsTDvHPqTxMgvFg6JuSN7a6r3v6fqCbvaI1kTQiK51NMe+9vMNVnw4zOsA==
+"@mantine/core@^7.14.0":
+  version "7.14.0"
+  resolved "https://registry.yarnpkg.com/@mantine/core/-/core-7.14.0.tgz#91176d84ba7e4b1fd0dce46bc0157ef16dbc5ae0"
+  integrity sha512-Osj3nwCXFhOVHIoDtpEpciP7huPhGmG/0w+Zol5tKJ9SG5trV4NDfdFwFcNoxx5al8L6eCLS/fJhloFXaqhOnA==
   dependencies:
     "@floating-ui/react" "^0.26.27"
     clsx "^2.1.1"
@@ -799,23 +799,23 @@
     react-textarea-autosize "8.5.4"
     type-fest "^4.26.1"
 
-"@mantine/hooks@^7.13.5":
-  version "7.13.5"
-  resolved "https://registry.yarnpkg.com/@mantine/hooks/-/hooks-7.13.5.tgz#60cb1de65b0b73eacda31e12c27ab16a26357157"
-  integrity sha512-hxFOQn6NeN7fP37VXZh7z5KxwqA9HYmydivIay0jyQTYA4Falc8Pb4ozSxnyFbXyxzUWcFIQL4xayHRvedgE+Q==
+"@mantine/hooks@^7.14.0":
+  version "7.14.0"
+  resolved "https://registry.yarnpkg.com/@mantine/hooks/-/hooks-7.14.0.tgz#fe835fc789f0a517d17b563ec964d6ccfc6568ef"
+  integrity sha512-BJ577AoQ5KnvbuaG174TYAmL2UqcX9qh9aL0aOx+gqyMM6GWeBXUXWx1kcMCzaDbYZwfQptU476fpSjHdcLjMw==
 
-"@mantine/notifications@^7.13.5":
-  version "7.13.5"
-  resolved "https://registry.yarnpkg.com/@mantine/notifications/-/notifications-7.13.5.tgz#60faf2e26a8a8bf68603d054560d249576c9d5eb"
-  integrity sha512-LGxTnqBtZRfACCv8qjL+RGVFwpXXjwIekC1V9JalcNt8/PxZ9H50V/H7lOgTvw5wpnA0W6Jzcdph/gRoZfhwug==
+"@mantine/notifications@^7.14.0":
+  version "7.14.0"
+  resolved "https://registry.yarnpkg.com/@mantine/notifications/-/notifications-7.14.0.tgz#b14f55727725a1c6564ee710b879cd3db887e143"
+  integrity sha512-CEpGRYj7xtzYQ8VLHN+tespWkTH3U1ghHKxKeJNmfcSjf7VcMbTa0LlKgszUE6A4CZma32RsxhDXdvgcQ3xmUg==
   dependencies:
-    "@mantine/store" "7.13.5"
+    "@mantine/store" "7.14.0"
     react-transition-group "4.4.5"
 
-"@mantine/store@7.13.5":
-  version "7.13.5"
-  resolved "https://registry.yarnpkg.com/@mantine/store/-/store-7.13.5.tgz#7bcd65f7b70a3516ebf593afadca1e5e703b2d52"
-  integrity sha512-+enhEaZpVKn0x3PLN3Txlk/06eIuq2wQhlFQnBe4dnD+C9VZZhXdff/IYCtXwB4XojwJl3rln7BSL4Ih4rSGmw==
+"@mantine/store@7.14.0":
+  version "7.14.0"
+  resolved "https://registry.yarnpkg.com/@mantine/store/-/store-7.14.0.tgz#c985275c6b396d282a233ec26b25692b07842851"
+  integrity sha512-qI0XnQZkHuWYbe9Mn6kFObka4x26RINnDpyJGSiK6on+VwDWGJ3gn1dfFlQa2zboVtA6OUXHyxDlwALHNJwiZw==
 
 "@messageformat/parser@^5.0.0":
   version "5.1.0"
