@@ -580,10 +580,10 @@
   dependencies:
     "@floating-ui/dom" "^1.0.0"
 
-"@floating-ui/react@^0.26.27":
-  version "0.26.27"
-  resolved "https://registry.yarnpkg.com/@floating-ui/react/-/react-0.26.27.tgz#402f7b4b2702650662705fe9cbe0f1d5607846a1"
-  integrity sha512-jLP72x0Kr2CgY6eTYi/ra3VA9LOkTo4C+DUTrbFgFOExKy3omYVmwMjNKqxAHdsnyLS96BIDLcO2SlnsNf8KUQ==
+"@floating-ui/react@^0.26.28":
+  version "0.26.28"
+  resolved "https://registry.yarnpkg.com/@floating-ui/react/-/react-0.26.28.tgz#93f44ebaeb02409312e9df9507e83aab4a8c0dc7"
+  integrity sha512-yORQuuAtVpiRjpMhdc0wJj06b9JFjrYF4qp96j++v2NBpbi6SEGF7donUJ3TMieerQ6qVkAv1tgr7L4r5roTqw==
   dependencies:
     "@floating-ui/react-dom" "^2.1.2"
     "@floating-ui/utils" "^0.2.8"
@@ -787,35 +787,35 @@
     "@lingui/cli" "4.14.0"
     "@lingui/conf" "4.14.0"
 
-"@mantine/core@^7.14.1":
-  version "7.14.1"
-  resolved "https://registry.yarnpkg.com/@mantine/core/-/core-7.14.1.tgz#25070c62ff9d537a01c1f2258f72f5209b6f7b1f"
-  integrity sha512-oHqaOE1n4KJkvJgF628OCVXE2zUgkEotEsPUdVaC58qRfJ7SvZAI26JNbUG8+MoqHHEqHKtBaRkTyuEVMbomxw==
+"@mantine/core@^7.14.2":
+  version "7.14.2"
+  resolved "https://registry.yarnpkg.com/@mantine/core/-/core-7.14.2.tgz#e72b39d2ee87479f913a58d8a3fdd03cc23c5eb4"
+  integrity sha512-lq5l8T6TRkaCbs3HeaRDvUG80JbrwCxQPF5pwNP4yRrdln99hWpGtyNm0DSfcN5u1eOQRudOtAc+R8TfU+2GXw==
   dependencies:
-    "@floating-ui/react" "^0.26.27"
+    "@floating-ui/react" "^0.26.28"
     clsx "^2.1.1"
     react-number-format "^5.4.2"
     react-remove-scroll "^2.6.0"
-    react-textarea-autosize "8.5.4"
-    type-fest "^4.26.1"
+    react-textarea-autosize "8.5.5"
+    type-fest "^4.27.0"
 
-"@mantine/hooks@^7.14.1":
-  version "7.14.1"
-  resolved "https://registry.yarnpkg.com/@mantine/hooks/-/hooks-7.14.1.tgz#6f986294cb23a9117e13068423c0d92d06e81f74"
-  integrity sha512-VlgTyV/9WNFCwCshW1KHMYNzLt+M8aG68E1lWaqOXtyWSLJo+X5zQJGg0f8bwGbJvIMQCpQd0yTLfnjD6uAtrA==
+"@mantine/hooks@^7.14.2":
+  version "7.14.2"
+  resolved "https://registry.yarnpkg.com/@mantine/hooks/-/hooks-7.14.2.tgz#ee5b0f85e9a12d52555c4b7268ddde60789c643b"
+  integrity sha512-WN0bEJHw2Lh/2PLqik8rqITJRZAu6A1FK6f+H0SNTrQuWYBPSHdNTqM8hntDnhpM/2mZ52t3VWYgvNVGczLxIw==
 
-"@mantine/notifications@^7.14.1":
-  version "7.14.1"
-  resolved "https://registry.yarnpkg.com/@mantine/notifications/-/notifications-7.14.1.tgz#c57515f5af724d52e971a53587b31547de493666"
-  integrity sha512-08suBIh/EJuTnzF1/Aao73S534KXvD7MiEaRNPXG+vBFz57Lu4DOtyLG4mXju6eNK99KJziVlK7CMIv6ADcQNg==
+"@mantine/notifications@^7.14.2":
+  version "7.14.2"
+  resolved "https://registry.yarnpkg.com/@mantine/notifications/-/notifications-7.14.2.tgz#82a72808a7b61d2cf6c7e2ec0910eded327d9ba0"
+  integrity sha512-BXafA7YeDNwziFkZ0BnK5iEN0Cw3CRk/pnZ6E6u9eGCve5iMkaCTk0LaKnT2DPmPaAqEgmnnRduy6Akaalzjhw==
   dependencies:
-    "@mantine/store" "7.14.1"
+    "@mantine/store" "7.14.2"
     react-transition-group "4.4.5"
 
-"@mantine/store@7.14.1":
-  version "7.14.1"
-  resolved "https://registry.yarnpkg.com/@mantine/store/-/store-7.14.1.tgz#bc199c7122d3fa0baf6f3416aab43fd8e9a683f4"
-  integrity sha512-wpemDaqOJc1zsvnjaic1+KRQSy7dZhQ4XDwxqqq5MwG6aImCHqEBVf17Qhj3sDjpA7pnpxnKAHotLqfzjQn3dQ==
+"@mantine/store@7.14.2":
+  version "7.14.2"
+  resolved "https://registry.yarnpkg.com/@mantine/store/-/store-7.14.2.tgz#bd523f75d2e975139a94ff0149215add2d0ebd93"
+  integrity sha512-OCur2rymfOw+tEFDQjUvVoAGl9DRnyIZ6gJyGaj73hrxSMUyrdsekdYwN5HpbI6qXqW0h7u1aV0tNf0vvIUQDA==
 
 "@messageformat/parser@^5.0.0":
   version "5.1.0"
@@ -2847,10 +2847,10 @@ react-style-singleton@^2.2.1:
     invariant "^2.2.4"
     tslib "^2.0.0"
 
-react-textarea-autosize@8.5.4:
-  version "8.5.4"
-  resolved "https://registry.yarnpkg.com/react-textarea-autosize/-/react-textarea-autosize-8.5.4.tgz#1c568ad838857b6ce86ee2a96e504179305e0bf4"
-  integrity sha512-eSSjVtRLcLfFwFcariT77t9hcbVJHQV76b51QjQGarQIHml2+gM2lms0n3XrhnDmgK5B+/Z7TmQk5OHNzqYm/A==
+react-textarea-autosize@8.5.5:
+  version "8.5.5"
+  resolved "https://registry.yarnpkg.com/react-textarea-autosize/-/react-textarea-autosize-8.5.5.tgz#987cc25ad7f8e51389a41f88239ff07d2e968761"
+  integrity sha512-CVA94zmfp8m4bSHtWwmANaBR8EPsKy2aZ7KwqhoS4Ftib87F9Kvi7XQhOixypPLMc6kVYgOXvKFuuzZDpHGRPg==
   dependencies:
     "@babel/runtime" "^7.20.13"
     use-composed-ref "^1.3.0"
@@ -3184,10 +3184,10 @@ type-fest@^0.21.3:
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-0.21.3.tgz#d260a24b0198436e133fa26a524a6d65fa3b2e37"
   integrity sha512-t0rzBq87m3fVcduHDUFhKmyyX+9eo6WQjZvf51Ea/M0Q7+T374Jp1aUiyUl0GKxp8M/OETVHSDvmkyPgvX+X2w==
 
-type-fest@^4.26.1:
-  version "4.26.1"
-  resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-4.26.1.tgz#a4a17fa314f976dd3e6d6675ef6c775c16d7955e"
-  integrity sha512-yOGpmOAL7CkKe/91I5O3gPICmJNLJ1G4zFYVAsRHg7M64biSnPtRj0WNQt++bRkjYOqjWXrhnUw1utzmVErAdg==
+type-fest@^4.27.0:
+  version "4.28.0"
+  resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-4.28.0.tgz#ee4b007cbd1db07aed98b19faa0a2852a8006162"
+  integrity sha512-jXMwges/FVbFRe5lTMJZVEZCrO9kI9c8k0PA/z7nF3bo0JSCCLysvokFjNPIUK/itEMas10MQM+AiHoHt/T/XA==
 
 typescript-eslint@^8.15.0:
   version "8.15.0"
@@ -3198,10 +3198,10 @@ typescript-eslint@^8.15.0:
     "@typescript-eslint/parser" "8.15.0"
     "@typescript-eslint/utils" "8.15.0"
 
-typescript@^5.6.3:
-  version "5.6.3"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.6.3.tgz#5f3449e31c9d94febb17de03cc081dd56d81db5b"
-  integrity sha512-hjcS1mhfuyi4WW8IWtjP7brDrG2cuDZukyrYrSauoXGNgx0S7zceP07adYkJycEr56BOUTNPzbInooiN3fn1qw==
+typescript@^5.7.2:
+  version "5.7.2"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.7.2.tgz#3169cf8c4c8a828cde53ba9ecb3d2b1d5dd67be6"
+  integrity sha512-i5t66RHxDvVN40HfDd1PsEThGNnlMCMT3jMUuoh9/0TaqWevNontacunWyN02LA9/fIbEWlcHZcgTKb9QoaLfg==
 
 undici-types@~6.19.2:
   version "6.19.8"
