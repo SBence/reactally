@@ -53,17 +53,7 @@
     json5 "^2.2.3"
     semver "^6.3.1"
 
-"@babel/generator@^7.21.1", "@babel/generator@^7.25.9":
-  version "7.25.9"
-  resolved "https://registry.yarnpkg.com/@babel/generator/-/generator-7.25.9.tgz#c7e828ebe0c2baba103b712924699c9e8a6e32f0"
-  integrity sha512-omlUGkr5EaoIJrhLf9CJ0TvjBRpd9+AXRG//0GEQ9THSo8wPiTlbpy1/Ow8ZTrbXpjd9FHXfbFQx32I04ht0FA==
-  dependencies:
-    "@babel/types" "^7.25.9"
-    "@jridgewell/gen-mapping" "^0.3.5"
-    "@jridgewell/trace-mapping" "^0.3.25"
-    jsesc "^3.0.2"
-
-"@babel/generator@^7.26.0":
+"@babel/generator@^7.21.1", "@babel/generator@^7.25.9", "@babel/generator@^7.26.0":
   version "7.26.2"
   resolved "https://registry.yarnpkg.com/@babel/generator/-/generator-7.26.2.tgz#87b75813bec87916210e5e01939a4c823d6bb74f"
   integrity sha512-zevQbhbau95nkoxSq3f/DC/SC+EEOUZd3DYqfSkMhY2/wfSeaHV1Ew4vk8e+x8lja31IbyuUa2uQ3JONqKbysw==
@@ -140,14 +130,7 @@
     js-tokens "^4.0.0"
     picocolors "^1.0.0"
 
-"@babel/parser@^7.1.0", "@babel/parser@^7.20.7", "@babel/parser@^7.22.0", "@babel/parser@^7.25.9":
-  version "7.25.9"
-  resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.25.9.tgz#8fcaa079ac7458facfddc5cd705cc8005e4d3817"
-  integrity sha512-aI3jjAAO1fh7vY/pBGsn1i9LDbRP43+asrRlkPuTXW5yHXtd1NgTEMudbBoDDxrf1daEEfPJqR+JBMakzrR4Dg==
-  dependencies:
-    "@babel/types" "^7.25.9"
-
-"@babel/parser@^7.26.0", "@babel/parser@^7.26.2":
+"@babel/parser@^7.1.0", "@babel/parser@^7.20.7", "@babel/parser@^7.22.0", "@babel/parser@^7.25.9", "@babel/parser@^7.26.0", "@babel/parser@^7.26.2":
   version "7.26.2"
   resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.26.2.tgz#fd7b6f487cfea09889557ef5d4eeb9ff9a5abd11"
   integrity sha512-DWMCZH9WA4Maitz2q21SRKHo9QXZxkDsbNZoVD62gusNtNBBqDg9i7uOhASfTfIGNzW+O+r7+jAlM8dwphcJKQ==
@@ -197,15 +180,7 @@
     debug "^4.3.1"
     globals "^11.1.0"
 
-"@babel/types@^7.0.0", "@babel/types@^7.20.7", "@babel/types@^7.21.2", "@babel/types@^7.25.9":
-  version "7.25.9"
-  resolved "https://registry.yarnpkg.com/@babel/types/-/types-7.25.9.tgz#620f35ea1f4233df529ec9a2668d2db26574deee"
-  integrity sha512-OwS2CM5KocvQ/k7dFJa8i5bNGJP0hXWfVCfDkqRFP1IreH1JDC7wG6eCYCi0+McbfT8OR/kNqsI0UU0xP9H6PQ==
-  dependencies:
-    "@babel/helper-string-parser" "^7.25.9"
-    "@babel/helper-validator-identifier" "^7.25.9"
-
-"@babel/types@^7.26.0":
+"@babel/types@^7.0.0", "@babel/types@^7.20.7", "@babel/types@^7.21.2", "@babel/types@^7.25.9", "@babel/types@^7.26.0":
   version "7.26.0"
   resolved "https://registry.yarnpkg.com/@babel/types/-/types-7.26.0.tgz#deabd08d6b753bc8e0f198f8709fb575e31774ff"
   integrity sha512-Z/yiTPj+lDVnF7lWeKCIJzaIkI0vYO87dMpZ4bg4TDrFe4XXLFWL1TbXU27gBP3QccxV9mZICCrnjnYlJjXHOA==
@@ -707,26 +682,26 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
-"@lingui/babel-plugin-extract-messages@4.14.0":
-  version "4.14.0"
-  resolved "https://registry.yarnpkg.com/@lingui/babel-plugin-extract-messages/-/babel-plugin-extract-messages-4.14.0.tgz#453b6676292bebdad05016098cd5c0b1ce0fe4cf"
-  integrity sha512-lLabYkUsiF0un4ezColFm9Yf23c+efPR/5DRM9cFwW9uZJ5ajN4Ic00dBxJK9HOpy6fpaANnaHFmrm4NScijvQ==
+"@lingui/babel-plugin-extract-messages@4.14.1":
+  version "4.14.1"
+  resolved "https://registry.yarnpkg.com/@lingui/babel-plugin-extract-messages/-/babel-plugin-extract-messages-4.14.1.tgz#12f5a83bad1f9fef65fc22b8136ebd1052a31add"
+  integrity sha512-X/2bKavX5HGaiLyGpGvw98XqrqKuTntD4IdLmwvCOh7c/pgM8u95brONixLFEBeLujba4IF+fvHo0RdlyOFKpg==
 
-"@lingui/cli@4.14.0", "@lingui/cli@^4.14.0":
-  version "4.14.0"
-  resolved "https://registry.yarnpkg.com/@lingui/cli/-/cli-4.14.0.tgz#88e5c9a406c36d2100128d40ded30a2d9c905e5a"
-  integrity sha512-g9aJ76wpl6Fj06SEGiGnilAErEuZG6/woAU1HM81E0ZZ8ib1DF+cf81PJE+8Lwoxc0yMqY8qMScwhwcUhnR0aA==
+"@lingui/cli@4.14.1", "@lingui/cli@^4.14.1":
+  version "4.14.1"
+  resolved "https://registry.yarnpkg.com/@lingui/cli/-/cli-4.14.1.tgz#062acbb088b05d4728890d9beb707a2168d8259e"
+  integrity sha512-4DUtjHg5fumZ+hX8bcGYGZw9A6F5JURTMrI8Z6MSkO26OeSHEtPcheGFiPYfNhFeON6fZWZmwgyV9kkb0+psug==
   dependencies:
     "@babel/core" "^7.21.0"
     "@babel/generator" "^7.21.1"
     "@babel/parser" "^7.22.0"
     "@babel/runtime" "^7.21.0"
     "@babel/types" "^7.21.2"
-    "@lingui/babel-plugin-extract-messages" "4.14.0"
-    "@lingui/conf" "4.14.0"
-    "@lingui/core" "4.14.0"
-    "@lingui/format-po" "4.14.0"
-    "@lingui/message-utils" "4.14.0"
+    "@lingui/babel-plugin-extract-messages" "4.14.1"
+    "@lingui/conf" "4.14.1"
+    "@lingui/core" "4.14.1"
+    "@lingui/format-po" "4.14.1"
+    "@lingui/message-utils" "4.14.1"
     babel-plugin-macros "^3.0.1"
     chalk "^4.1.0"
     chokidar "3.5.1"
@@ -747,10 +722,10 @@
     ramda "^0.27.1"
     source-map "^0.8.0-beta.0"
 
-"@lingui/conf@4.14.0":
-  version "4.14.0"
-  resolved "https://registry.yarnpkg.com/@lingui/conf/-/conf-4.14.0.tgz#4c78f15125de5c0e9bae0aa8b6e5c08daaa4adb5"
-  integrity sha512-wHZ4s79wqPnROa3xEoUTNep7sjqwbDHCMLBhsHbcvk/3ACDKgm0TMvDnIRjMRwrPRsK98yxSmWaE+NKhT0Ggyw==
+"@lingui/conf@4.14.1":
+  version "4.14.1"
+  resolved "https://registry.yarnpkg.com/@lingui/conf/-/conf-4.14.1.tgz#c9a49e3fb78a4d631ae5a1ae20207b8c1ed760b4"
+  integrity sha512-LE/1RrVoMebQK+u4y6VQJdSwjOsMu4go/VR8m1eH0THn8vfkuLOYlPTIAHTWcoO+Ogi15p5TqHPfJcgVBy/NpA==
   dependencies:
     "@babel/runtime" "^7.20.13"
     chalk "^4.1.0"
@@ -759,64 +734,64 @@
     jiti "^1.17.1"
     lodash.get "^4.4.2"
 
-"@lingui/core@4.14.0":
-  version "4.14.0"
-  resolved "https://registry.yarnpkg.com/@lingui/core/-/core-4.14.0.tgz#108276abe5ce1d528886a6d3d562b1700a4ac787"
-  integrity sha512-rsuBKG3mupWpfP5RYacufu0ToavrqgFPnEI/zOcuvMNL24IlZ38O2/P3POZCEA8XCyhON70FICy8xs3ZvQ+uWg==
+"@lingui/core@4.14.1":
+  version "4.14.1"
+  resolved "https://registry.yarnpkg.com/@lingui/core/-/core-4.14.1.tgz#ff6caceeaf8763b1ba2a8da60bbce95ff2d1b700"
+  integrity sha512-3O6bnNzApWjb+jIdXa7G2VbrP6jZ5nfCeYSVloEYg6YFIfsQ3GunccK6I2nL80mWgr2qGP4VilGD+ODCeXHITA==
   dependencies:
     "@babel/runtime" "^7.20.13"
-    "@lingui/message-utils" "4.14.0"
+    "@lingui/message-utils" "4.14.1"
     unraw "^3.0.0"
 
-"@lingui/format-po@4.14.0":
-  version "4.14.0"
-  resolved "https://registry.yarnpkg.com/@lingui/format-po/-/format-po-4.14.0.tgz#fc8a361a29804964dc9eaf94ae072d202e8abbc2"
-  integrity sha512-3Bmk9f7lRuBoZsBG5c5hq5ipgAqeux+nDVnAIXSfsp4f8jj+z+cHwW0xuHcW48mHQFwfcTGAYZcKnwhuwwut6Q==
+"@lingui/format-po@4.14.1":
+  version "4.14.1"
+  resolved "https://registry.yarnpkg.com/@lingui/format-po/-/format-po-4.14.1.tgz#30c9c68b8afd1ed181277b5c8c36dcb8982447c4"
+  integrity sha512-SfT3/4LspwDq5KNyN+HUsDiF2IVMBk0LS6ruEG+vGOKNXzdSpnuxAT5E6wgGA/4/MG2UF9WKBzfkfOsYeXmSEg==
   dependencies:
-    "@lingui/conf" "4.14.0"
-    "@lingui/message-utils" "4.14.0"
+    "@lingui/conf" "4.14.1"
+    "@lingui/message-utils" "4.14.1"
     date-fns "^3.6.0"
     pofile "^1.1.4"
 
-"@lingui/macro@^4.14.0":
-  version "4.14.0"
-  resolved "https://registry.yarnpkg.com/@lingui/macro/-/macro-4.14.0.tgz#daaabf67d789aee6c5d0c46fa3ae446f060aff1f"
-  integrity sha512-zZNPYVwCMvKcDtaPzYDhkfogbUMEKCsCEIqvXrKI2DujLjV7DWGJ97U99h9iGDeBrEIZqFHnimsAwbb2lfRPaQ==
+"@lingui/macro@^4.14.1":
+  version "4.14.1"
+  resolved "https://registry.yarnpkg.com/@lingui/macro/-/macro-4.14.1.tgz#52d37bf5ff566b985887a3c23c66482f5b8895ff"
+  integrity sha512-kVAe78Sj4a74GJTOOqoAzxZgsgqPfcBFQC1akXMlAv9r4bX7zvbMov2cQVWjvix0waetwxo3oVqlSozsa8UPAw==
   dependencies:
     "@babel/runtime" "^7.20.13"
     "@babel/types" "^7.20.7"
-    "@lingui/conf" "4.14.0"
-    "@lingui/core" "4.14.0"
-    "@lingui/message-utils" "4.14.0"
+    "@lingui/conf" "4.14.1"
+    "@lingui/core" "4.14.1"
+    "@lingui/message-utils" "4.14.1"
 
-"@lingui/message-utils@4.14.0":
-  version "4.14.0"
-  resolved "https://registry.yarnpkg.com/@lingui/message-utils/-/message-utils-4.14.0.tgz#c4c1cdaca3e47fe6383826db1f74fb9d9e6553ab"
-  integrity sha512-izZod/6P2cXtqZt06r+VcbG3oCskPY8A1dVA8hyx0UZBCaufrZk6NgzCMYTMRXyOuXt6MafQyUfBJSrE4n3FIw==
+"@lingui/message-utils@4.14.1":
+  version "4.14.1"
+  resolved "https://registry.yarnpkg.com/@lingui/message-utils/-/message-utils-4.14.1.tgz#dc6816464d15841ebbf71d68fcc66d624e1788cb"
+  integrity sha512-J6MzyTLNCzEnyR1Da188G81cRcQMbk/lyYnLWMzQjIELDX8bBBwNea91Sf5Zm+BB+ADWmmGTdUqRPAjDqT9Y5w==
   dependencies:
     "@messageformat/parser" "^5.0.0"
     js-sha256 "^0.10.1"
 
-"@lingui/react@^4.14.0":
-  version "4.14.0"
-  resolved "https://registry.yarnpkg.com/@lingui/react/-/react-4.14.0.tgz#7af9dcbd16e98018d8ae3d9b0e4e06b9da2b4224"
-  integrity sha512-20gk22E3RZar4Wcdt/gBtHfi1UZTQvEX5XaCDZF9iAyIlwIWxA+eTquNwg08tYl4Ne6o8jjUGEWcNBJ3ZnlXhg==
+"@lingui/react@^4.14.1":
+  version "4.14.1"
+  resolved "https://registry.yarnpkg.com/@lingui/react/-/react-4.14.1.tgz#4b7d3d449703363cf0351ca2792507c7ed90b51b"
+  integrity sha512-oZ9Rw+vOXJuaZvI1o4ASAIbCSe7AchCxsKGc0Y3csduTEOisvhsLgh8UDA8LW1mRgVPh5yZYB+VbfDMDQSzHpg==
   dependencies:
     "@babel/runtime" "^7.20.13"
-    "@lingui/core" "4.14.0"
+    "@lingui/core" "4.14.1"
 
-"@lingui/vite-plugin@^4.14.0":
-  version "4.14.0"
-  resolved "https://registry.yarnpkg.com/@lingui/vite-plugin/-/vite-plugin-4.14.0.tgz#df6f106c988954f2cbe640e4f77ce6a1fb2518d5"
-  integrity sha512-1UilkYXIA8xfexlndsbsfS7AQi0Qm0VRSf92DWw5YCACFuk8Exb1su/CYrQu/YWk0MfcDY6/7rJDEOPWGgBRWA==
+"@lingui/vite-plugin@^4.14.1":
+  version "4.14.1"
+  resolved "https://registry.yarnpkg.com/@lingui/vite-plugin/-/vite-plugin-4.14.1.tgz#67e546e6c5e00be6883a694fe801b92d29db86a0"
+  integrity sha512-K5lhG7IxpmxaDgmR4hOtPftJzCq3VGzq7VZnhBUHQPDxTf8fXj2xVNG3lUJtUkDepRhRLIjbCFT9e3f2VnUwZw==
   dependencies:
-    "@lingui/cli" "4.14.0"
-    "@lingui/conf" "4.14.0"
+    "@lingui/cli" "4.14.1"
+    "@lingui/conf" "4.14.1"
 
-"@mantine/core@^7.14.2":
-  version "7.14.2"
-  resolved "https://registry.yarnpkg.com/@mantine/core/-/core-7.14.2.tgz#e72b39d2ee87479f913a58d8a3fdd03cc23c5eb4"
-  integrity sha512-lq5l8T6TRkaCbs3HeaRDvUG80JbrwCxQPF5pwNP4yRrdln99hWpGtyNm0DSfcN5u1eOQRudOtAc+R8TfU+2GXw==
+"@mantine/core@^7.14.3":
+  version "7.14.3"
+  resolved "https://registry.yarnpkg.com/@mantine/core/-/core-7.14.3.tgz#79c23f907b41c74a9ac8d0381ea753f5f938e0b1"
+  integrity sha512-niAi+ZYBr4KrG+X2Mx+muvEzUOOHc/Rx0vsbIGYeNe7urwHSm/xNEGsaapmCqeRC0CSL4KI6TJOq8QhnSuQZcw==
   dependencies:
     "@floating-ui/react" "^0.26.28"
     clsx "^2.1.1"
@@ -825,23 +800,23 @@
     react-textarea-autosize "8.5.5"
     type-fest "^4.27.0"
 
-"@mantine/hooks@^7.14.2":
-  version "7.14.2"
-  resolved "https://registry.yarnpkg.com/@mantine/hooks/-/hooks-7.14.2.tgz#ee5b0f85e9a12d52555c4b7268ddde60789c643b"
-  integrity sha512-WN0bEJHw2Lh/2PLqik8rqITJRZAu6A1FK6f+H0SNTrQuWYBPSHdNTqM8hntDnhpM/2mZ52t3VWYgvNVGczLxIw==
+"@mantine/hooks@^7.14.3":
+  version "7.14.3"
+  resolved "https://registry.yarnpkg.com/@mantine/hooks/-/hooks-7.14.3.tgz#26bfbf7d851989be170caaae4189833131a3e28a"
+  integrity sha512-cU3R9b8GLs6aCvpsVC56ZOOJCUIoDqX3RcLWkcfpA5a47LjWa/rzegP4YWfNW6/E9vodPJT4AEbYXVffYlyNwA==
 
-"@mantine/notifications@^7.14.2":
-  version "7.14.2"
-  resolved "https://registry.yarnpkg.com/@mantine/notifications/-/notifications-7.14.2.tgz#82a72808a7b61d2cf6c7e2ec0910eded327d9ba0"
-  integrity sha512-BXafA7YeDNwziFkZ0BnK5iEN0Cw3CRk/pnZ6E6u9eGCve5iMkaCTk0LaKnT2DPmPaAqEgmnnRduy6Akaalzjhw==
+"@mantine/notifications@^7.14.3":
+  version "7.14.3"
+  resolved "https://registry.yarnpkg.com/@mantine/notifications/-/notifications-7.14.3.tgz#3ee2145d7e559ee29b5a8ce8e3289383cbe1c421"
+  integrity sha512-7N9u4upi1On8TL94UvrUNhpDGxp1sAkbcgiNcu6zhvy4j29TPFapoXB5CRE9zzjAf3CYq3AigE96bXlCDm9xuQ==
   dependencies:
-    "@mantine/store" "7.14.2"
+    "@mantine/store" "7.14.3"
     react-transition-group "4.4.5"
 
-"@mantine/store@7.14.2":
-  version "7.14.2"
-  resolved "https://registry.yarnpkg.com/@mantine/store/-/store-7.14.2.tgz#bd523f75d2e975139a94ff0149215add2d0ebd93"
-  integrity sha512-OCur2rymfOw+tEFDQjUvVoAGl9DRnyIZ6gJyGaj73hrxSMUyrdsekdYwN5HpbI6qXqW0h7u1aV0tNf0vvIUQDA==
+"@mantine/store@7.14.3":
+  version "7.14.3"
+  resolved "https://registry.yarnpkg.com/@mantine/store/-/store-7.14.3.tgz#4f1fd9ee538da5b62efcdd717e3a807a0e722532"
+  integrity sha512-o15vbTUNlLqD/yLOtEClnc4fY2ONDaCZiaL9REUy0xhCDbVTeeqnu9BV604yuym50ZH5mhMHix1TX3K9vGsWvA==
 
 "@messageformat/parser@^5.0.0":
   version "5.1.0"
