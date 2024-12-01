@@ -17,52 +17,52 @@ msgstr ""
 msgid "Accent color"
 msgstr "Kiemelőszín"
 
-#: src/components/menu/MenuItems.tsx:36
-#: src/components/menu/MenuItems.tsx:43
+#: src/components/menu/MenuItems.tsx:40
+#: src/components/menu/MenuItems.tsx:49
 msgid "Backup"
 msgstr "Biztonsági mentés"
 
-#: src/components/menu/RemoveModal.tsx:36
+#: src/components/menu/RemoveModal.tsx:44
 msgid "Cancel"
 msgstr "Mégse"
 
-#: src/components/menu/RestoreButton.tsx:24
-#: src/components/menu/RestoreButton.tsx:37
+#: src/components/menu/RestoreButton.tsx:27
+#: src/components/menu/RestoreButton.tsx:43
 msgid "Failed to restore backup."
 msgstr "Visszaállítás sikertelen."
 
-#: src/components/menu/RestoreButton.tsx:38
+#: src/components/menu/RestoreButton.tsx:44
 msgid "Invalid JSON file uploaded."
 msgstr "A feltöltött fájl nem JSON formátumú."
 
-#: src/components/menu/RestoreButton.tsx:25
+#: src/components/menu/RestoreButton.tsx:28
 msgid "Non-text file uploaded."
 msgstr "A feltöltött fájl formátuma nem megfelelő."
 
-#: src/components/menu/MenuButton.tsx:38
+#: src/components/menu/MenuButton.tsx:37
 msgid "Options"
 msgstr "Beállítások"
 
-#: src/components/menu/RemoveModal.tsx:48
+#: src/components/menu/RemoveModal.tsx:56
 msgid "Remove"
 msgstr "Törlés"
 
-#: src/components/menu/MenuItems.tsx:56
+#: src/components/menu/MenuItems.tsx:62
 msgid "Remove all"
 msgstr "Összes törlése"
 
-#: src/components/menu/RemoveModal.tsx:30
+#: src/components/menu/RemoveModal.tsx:33
 msgid "Remove all counters?"
 msgstr "Törli az összes számlálót?"
 
-#: src/components/menu/RemoveModal.tsx:44
+#: src/components/menu/RemoveModal.tsx:52
 msgid "Removed all counters."
 msgstr "Összes számláló törölve."
 
-#: src/components/menu/RestoreButton.tsx:51
+#: src/components/menu/RestoreButton.tsx:59
 msgid "Restore"
 msgstr "Mentés visszaállítása"
 
-#: src/components/menu/RestoreButton.tsx:32
+#: src/components/menu/RestoreButton.tsx:38
 msgid "Successfully restored backup."
 msgstr "Sikeres visszaállítás."

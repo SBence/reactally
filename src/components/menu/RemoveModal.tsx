@@ -1,10 +1,11 @@
+import { Trans } from "@lingui/react/macro";
+import { t } from "@lingui/core/macro";
 import { Button, Group, Modal, Space, ThemeIcon, Title } from "@mantine/core";
 import { notifications } from "@mantine/notifications";
 import { IconTrash } from "@tabler/icons-react";
 import { Dispatch, SetStateAction } from "react";
 import { useAppDispatch } from "../../store/hooks";
 import { removeAll } from "../../store/slices/countersSlice";
-import { t, Trans } from "@lingui/macro";
 
 export default function RemoveModal({
   opened,

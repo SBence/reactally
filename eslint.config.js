@@ -45,9 +45,10 @@ export default tseslint.config(
       "lingui/no-unlocalized-strings": [
         "error",
         {
-          ignore: ["(Reac)|(Tally)"],
-          ignoreAttribute: ["download", "query"],
-          ignoreFunction: ["useMediaQuery"],
+          ignore: ["^(?![A-Z])\\S+$", "(Reac)|(Tally)"],
+          ignoreNames: ["download", "query"],
+          ignoreFunctions: ["useMediaQuery"],
+          useTsTypes: true,
         },
       ],
       "lingui/t-call-in-function": "error",

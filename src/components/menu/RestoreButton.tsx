@@ -1,10 +1,11 @@
+import { Trans } from "@lingui/react/macro";
+import { t } from "@lingui/core/macro";
 import { FileButton, Menu } from "@mantine/core";
 import { notifications } from "@mantine/notifications";
 import { IconDatabaseImport } from "@tabler/icons-react";
 import { Dispatch, SetStateAction } from "react";
 import { useAppDispatch, useAppSelector } from "../../store/hooks";
 import { appendSet } from "../../store/slices/countersSlice";
-import { t, Trans } from "@lingui/macro";
 import safeLoadJson from "../../utils/safeLoadJson";
 import isCounters from "../../types/predicates/isCounters";
 
