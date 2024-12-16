@@ -534,10 +534,10 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
-"@eslint/js@9.16.0", "@eslint/js@^9.15.0":
-  version "9.16.0"
-  resolved "https://registry.yarnpkg.com/@eslint/js/-/js-9.16.0.tgz#3df2b2dd3b9163056616886c86e4082f45dbf3f4"
-  integrity sha512-tw2HxzQkrbeuvyj1tG2Yqq+0H9wGoI2IMk4EOsQeX+vmd75FtJAzf+gTA69WF+baUKRYQ3x2kbLE08js5OsTVg==
+"@eslint/js@9.17.0", "@eslint/js@^9.17.0":
+  version "9.17.0"
+  resolved "https://registry.yarnpkg.com/@eslint/js/-/js-9.17.0.tgz#1523e586791f80376a6f8398a3964455ecc651ec"
+  integrity sha512-Sxc4hqcs1kTu0iID3kcZDW3JHq2a77HO9P8CP6YEA/FpH3Ll8UXE2r/86Rz9YJLKme39S9vU5OWNjC6Xl0Cr3w==
 
 "@eslint/object-schema@^2.1.4":
   version "2.1.4"
@@ -686,39 +686,39 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
-"@lingui/babel-plugin-extract-messages@5.1.0":
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/@lingui/babel-plugin-extract-messages/-/babel-plugin-extract-messages-5.1.0.tgz#50d6386a551465231bbb0570da86037e24de33d3"
-  integrity sha512-GlfZJcodEeGB5DbDj7YZx1Iyym0lcJiwrkM4BwdSmJpoZRF+dbiVmRk/dRg5Zw90ug6K1OOyMDbxlrZPnMh98w==
+"@lingui/babel-plugin-extract-messages@5.1.1":
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/@lingui/babel-plugin-extract-messages/-/babel-plugin-extract-messages-5.1.1.tgz#1b01ceee73e8d3556b17b9909e525fa692f45fab"
+  integrity sha512-2jAmEbyPLeZFLMcuIT/4pXum19e9/skQQcAx6hRtkjoUf8CqsZY8JSOcijZ6EEDgaNZQSepoaOWAvQNLB6vD0A==
 
-"@lingui/babel-plugin-lingui-macro@5.1.0":
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/@lingui/babel-plugin-lingui-macro/-/babel-plugin-lingui-macro-5.1.0.tgz#389ca3f7d05f84b279c72c37e7acc1a9ffded26f"
-  integrity sha512-fRkzY6XAL5c7rr1mI3VHzgNzrmRXEjSKG0VZKYt3MsMrbipzzjGYe/1ubNjxeYJqWUIaK4p7qD+bru8N6Ppo6A==
+"@lingui/babel-plugin-lingui-macro@5.1.1":
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/@lingui/babel-plugin-lingui-macro/-/babel-plugin-lingui-macro-5.1.1.tgz#dfb54e35f5003fc9e095c5d4adaca6a4ca53bf6e"
+  integrity sha512-mW7FiE9PlKiFFXrA8+u0mN+ExXDjTqHX0nQTmbhNd6afNUgtCHv8Krokk9Hheogc4TdFprR/ADlp7v2kUOKgKw==
   dependencies:
     "@babel/core" "^7.20.12"
     "@babel/runtime" "^7.20.13"
     "@babel/types" "^7.20.7"
-    "@lingui/conf" "5.1.0"
-    "@lingui/core" "5.1.0"
-    "@lingui/message-utils" "5.1.0"
+    "@lingui/conf" "5.1.1"
+    "@lingui/core" "5.1.1"
+    "@lingui/message-utils" "5.1.1"
 
-"@lingui/cli@5.1.0", "@lingui/cli@^5.1.0":
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/@lingui/cli/-/cli-5.1.0.tgz#f0088adf809376812e2107b1a7c33de8d69f5cef"
-  integrity sha512-RJiV67QSIHalWEXmnU6j4FwDWIF8tEx0Edq6DE8SvR+aAoSZBjXEBvNfFJcaimWeyUyv+fXUy6rG4rzSC87iFQ==
+"@lingui/cli@5.1.1", "@lingui/cli@^5.1.1":
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/@lingui/cli/-/cli-5.1.1.tgz#1633741c2833cd0098369e524186b3afc95b95ec"
+  integrity sha512-n+dC9XJ0Be6NEL6Wp69jFmuBNyYeAsISdtUZqgZZHjYxG3yhjcO7NTuittw9JxOlV4MXIadoGiTgY7j01Kg12g==
   dependencies:
     "@babel/core" "^7.21.0"
     "@babel/generator" "^7.21.1"
     "@babel/parser" "^7.22.0"
     "@babel/runtime" "^7.21.0"
     "@babel/types" "^7.21.2"
-    "@lingui/babel-plugin-extract-messages" "5.1.0"
-    "@lingui/babel-plugin-lingui-macro" "5.1.0"
-    "@lingui/conf" "5.1.0"
-    "@lingui/core" "5.1.0"
-    "@lingui/format-po" "5.1.0"
-    "@lingui/message-utils" "5.1.0"
+    "@lingui/babel-plugin-extract-messages" "5.1.1"
+    "@lingui/babel-plugin-lingui-macro" "5.1.1"
+    "@lingui/conf" "5.1.1"
+    "@lingui/core" "5.1.1"
+    "@lingui/format-po" "5.1.1"
+    "@lingui/message-utils" "5.1.1"
     babel-plugin-macros "^3.0.1"
     chalk "^4.1.0"
     chokidar "3.5.1"
@@ -739,10 +739,10 @@
     ramda "^0.27.1"
     source-map "^0.8.0-beta.0"
 
-"@lingui/conf@5.1.0":
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/@lingui/conf/-/conf-5.1.0.tgz#832abf321f13b46dfa3af677d453d78bdf201a72"
-  integrity sha512-EDILmdZpZ2vXiEEd1eU6aHIm3SqynSzH+X3SkOlO6/j0imT5JAq5XhSLm8mddd2xlvI0CufgGKS8O4XrW3DUIw==
+"@lingui/conf@5.1.1":
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/@lingui/conf/-/conf-5.1.1.tgz#1607819c79e7aaaa84fcd18aa32445e0546335b9"
+  integrity sha512-TC1fz5K+8bZ2u88kbloHUHpyHVDdAr0vf8ADcfJxJE/mIfymaYtyH7YVUP7+J1vcVlI/xNt7Rubg0f4Vp+GxnQ==
   dependencies:
     "@babel/runtime" "^7.20.13"
     chalk "^4.1.0"
@@ -751,56 +751,56 @@
     jiti "^1.17.1"
     lodash.get "^4.4.2"
 
-"@lingui/core@5.1.0":
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/@lingui/core/-/core-5.1.0.tgz#579abcf5312ed153985aec072cf507c4ab4e1278"
-  integrity sha512-mjkKvcUMbzmkbyR/JnW4FM56oAnLvVNup1zvKoBQ/kPt+w1rIRCpE0Sr67RY19tlqlAO8ZR2C+IBrUjegSNmSw==
+"@lingui/core@5.1.1":
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/@lingui/core/-/core-5.1.1.tgz#1ee78144adbef18359961ee4a758b13fb7fdbefd"
+  integrity sha512-gyjT2CPE3Yb8pqRI+aJd4koMejeXgSq23tPM/i+EWPF42p1zqc6aqFL2KBFEJKkoKZhDljOLrjQFHAeeC/Bmqw==
   dependencies:
     "@babel/runtime" "^7.20.13"
-    "@lingui/message-utils" "5.1.0"
+    "@lingui/message-utils" "5.1.1"
     unraw "^3.0.0"
 
-"@lingui/format-po@5.1.0":
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/@lingui/format-po/-/format-po-5.1.0.tgz#0f7325e52b70fc1807d62c552f9c64ff54313fe3"
-  integrity sha512-f7ksAiFi6X/0TuYNsUbFKvabx9GiBGpHJ/Xy3z611OClBBZkrsljFynPtlE5xBk0gc3sY/4t9zd5IuTZPV6xvw==
+"@lingui/format-po@5.1.1":
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/@lingui/format-po/-/format-po-5.1.1.tgz#0e13bfca7a790e01c2fd5d5b7cbaae9b5c35f71c"
+  integrity sha512-KgNXP2pG19xrgyRstafHa21M/Yek2FB2ytrm42HYQuHJnYJAmwZ5HdP1gTmm2Z3icZatpY95O8SgYWTIXByEtg==
   dependencies:
-    "@lingui/conf" "5.1.0"
-    "@lingui/message-utils" "5.1.0"
+    "@lingui/conf" "5.1.1"
+    "@lingui/message-utils" "5.1.1"
     date-fns "^3.6.0"
     pofile "^1.1.4"
 
-"@lingui/macro@^5.1.0":
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/@lingui/macro/-/macro-5.1.0.tgz#512b9a023ea9883fc089c7a947822eddb1f59727"
-  integrity sha512-1APRmhEPBrHH3tFLXXhEo/UVBrjx6555JIjpHocmkLQ4TCZywFZmUOkHe5bvr7TobY7BBS7Q49pQubIE9vtOZg==
+"@lingui/macro@^5.1.1":
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/@lingui/macro/-/macro-5.1.1.tgz#9f2cc0c2425fc872f39ff85d29ebee1bbcb1dab9"
+  integrity sha512-/52ISD+DGv6Wy+nfwtHVVCEOnvrTiA/YSoS6hTxL/PR2aL706QVxhLNXA0T+CBqj+zWFgsDpL8LFaAv+eD7cXw==
   dependencies:
-    "@lingui/core" "5.1.0"
-    "@lingui/react" "5.1.0"
+    "@lingui/core" "5.1.1"
+    "@lingui/react" "5.1.1"
 
-"@lingui/message-utils@5.1.0":
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/@lingui/message-utils/-/message-utils-5.1.0.tgz#a76b4364c70fa8aa9a78a9c8a02ece5c4acb8565"
-  integrity sha512-MKfq4a2QuPK5SfIjo6UI0Hc0r+jaaNu0UxZm23L+3jE8pmnSC+Dr5kIp2MGXmr8ywoGezgYP25sU/nwNE8rmkg==
+"@lingui/message-utils@5.1.1":
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/@lingui/message-utils/-/message-utils-5.1.1.tgz#0b091040b5ea6e9b4508b7128a40684f3e483349"
+  integrity sha512-v4PA3eI4LHNyHklqgX6vdZLHYhJcBrgJNmATfBrf3Rm+5Xdg2SKjrXKRm28Q+diNo+ao6IPwlxq32FZUS7h4kA==
   dependencies:
     "@messageformat/parser" "^5.0.0"
     js-sha256 "^0.10.1"
 
-"@lingui/react@5.1.0", "@lingui/react@^5.0.0":
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/@lingui/react/-/react-5.1.0.tgz#e4a7a9011ca60b9863af882b34d96ce90c8911d9"
-  integrity sha512-XbhcY00I/IFf/CM4nNmPjh69oAgHy5CxafzVrJXQKFkpfnRbO867EgYNv9KXWeSE+BSoxSARejbkPO8oIqxRPQ==
+"@lingui/react@5.1.1", "@lingui/react@^5.0.0":
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/@lingui/react/-/react-5.1.1.tgz#0782955c6274d70de571abad5802657224f81c1d"
+  integrity sha512-lhh2hwoCGoA50cBAHqpeTiZV+FUyNuVpLePux1MKSTuBkH8XaKk+cBghwqeDV5oNTJkjZx5ByKgq5rlsBAtBww==
   dependencies:
     "@babel/runtime" "^7.20.13"
-    "@lingui/core" "5.1.0"
+    "@lingui/core" "5.1.1"
 
-"@lingui/vite-plugin@^5.1.0":
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/@lingui/vite-plugin/-/vite-plugin-5.1.0.tgz#84fc6e80f3fcd42312ea5114d6e3d3f13bf09a52"
-  integrity sha512-jHwwQNc/Cqcr2F32bX08fVo5TUYeMDiIPFcdwZxCxCYEdax5alTZ8AF2UTexBK2uvOae52bpOzJprcTuIu0jOQ==
+"@lingui/vite-plugin@^5.1.1":
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/@lingui/vite-plugin/-/vite-plugin-5.1.1.tgz#563af47ba1f15a9cc51f84ffa5791d7518d4a3d2"
+  integrity sha512-+QHdAlibDaxVwkROvo3ZR3NwI62VVPrWKwzRlI+tJUBFE5fAA6ip2mOJArCCa4mwjk5MKBzb6nXItpsFuPdSDw==
   dependencies:
-    "@lingui/cli" "5.1.0"
-    "@lingui/conf" "5.1.0"
+    "@lingui/cli" "5.1.1"
+    "@lingui/conf" "5.1.1"
 
 "@mantine/core@^7.15.1":
   version "7.15.1"
@@ -978,17 +978,17 @@
   resolved "https://registry.yarnpkg.com/@sinclair/typebox/-/typebox-0.27.8.tgz#6667fac16c436b5434a387a34dedb013198f6e6e"
   integrity sha512-+Fj43pSMwJs4KRrH/938Uf+uAELIgVBmQzg/q1YG10djyfA3TnrU8N8XzqCh/okZdszqBQTZf96idMfE5lnwTA==
 
-"@tabler/icons-react@^3.24.0":
-  version "3.24.0"
-  resolved "https://registry.yarnpkg.com/@tabler/icons-react/-/icons-react-3.24.0.tgz#854fad7a142ee1dd49a62e59f7eb551eadaa318e"
-  integrity sha512-m9c7TmlcDmKqvZAasG5rv1YvazZDrVEhNdNFa2d1Bzotc0dh+iceFdiZCEcYPDb5UcRyLAMvOaOC9y/5sfMMWw==
+"@tabler/icons-react@^3.26.0":
+  version "3.26.0"
+  resolved "https://registry.yarnpkg.com/@tabler/icons-react/-/icons-react-3.26.0.tgz#5db95a886f3766aefea6d94b729438dd0a8dd784"
+  integrity sha512-t18Zmu1ROktB7M8hWQ6vJw+mNpI/LPk5PPxLuE+kNB+4Zzf38GfETL8VF98inhzcfHohsggdROzMzwSAfjcAxw==
   dependencies:
-    "@tabler/icons" "3.24.0"
+    "@tabler/icons" "3.26.0"
 
-"@tabler/icons@3.24.0":
-  version "3.24.0"
-  resolved "https://registry.yarnpkg.com/@tabler/icons/-/icons-3.24.0.tgz#a4fd4bbcaa95cea92fa653d427bd298c4d589c5e"
-  integrity sha512-qNis9e90QcdxAGV3wNIeX0Ba2R7ktm0cnqOToKHJfC2kj3fvJwEVLsw63K0/fm7NW8rSZjDSTQRmMnSg8g/wrg==
+"@tabler/icons@3.26.0":
+  version "3.26.0"
+  resolved "https://registry.yarnpkg.com/@tabler/icons/-/icons-3.26.0.tgz#7a23b2a99abda32e3b4cf00ce46dddaa5daa1923"
+  integrity sha512-oO3D4ss+DxzxqU1aDy0f1HmToyrO0gcQWIMpzHAfV1quPUx0BZYvNm5xz1DQb4DxNm/+xNvbBGLJy4pzTLYWag==
 
 "@types/babel__core@^7.20.5":
   version "7.20.5"
@@ -1528,7 +1528,7 @@ cosmiconfig@^8.0.0:
     parse-json "^5.2.0"
     path-type "^4.0.0"
 
-cross-spawn@^7.0.0, cross-spawn@^7.0.5:
+cross-spawn@^7.0.0, cross-spawn@^7.0.6:
   version "7.0.6"
   resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-7.0.6.tgz#8a58fe78f00dcd70c370451759dfbfaf03e8ee9f"
   integrity sha512-uV2QOWP2nWzsy2aMp8aRibhi9dlzF5Hgh5SHaB9OiTGEyDTiJJyx0uy51QXdyWbtAHNua4XJzUKca3OzKUd3vA==
@@ -1766,10 +1766,10 @@ eslint-config-prettier@^9.0.0:
   resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-9.1.0.tgz#31af3d94578645966c082fcb71a5846d3c94867f"
   integrity sha512-NSWl5BFQWEPi1j4TjVNItzYV7dZXZ+wP6I6ZhrBGpChQhZRUaElihE9uRRkcbRnNb76UMKDF3r+WTmNcGPKsqw==
 
-eslint-plugin-lingui@^0.8.3:
-  version "0.8.3"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-lingui/-/eslint-plugin-lingui-0.8.3.tgz#9910ea157c1916f3f506b7db539c58d00dd410ce"
-  integrity sha512-CKEW2bIfAMwGzWqNJ3dUIMPJGHC0i++DXaWVhAyxIBUv338JKKHXb5USv2PZwFcI93T8Omx1ovOr216nF37t/A==
+eslint-plugin-lingui@^0.8.4:
+  version "0.8.4"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-lingui/-/eslint-plugin-lingui-0.8.4.tgz#2d45e9f90c9c56df191d0006ae3407c4ee58e02f"
+  integrity sha512-7A/mIANcJgvWoTkCIdLodlGF6ZZOfQXZ4nqkVPWVzNwIjyh39SOgEuLPBThmPzpzCFAOTLbBi1lKq9hzN4vpFQ==
   dependencies:
     "@typescript-eslint/utils" "^8.0.0"
     micromatch "^4.0.0"
@@ -1802,17 +1802,17 @@ eslint-visitor-keys@^4.2.0:
   resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-4.2.0.tgz#687bacb2af884fcdda8a6e7d65c606f46a14cd45"
   integrity sha512-UyLnSehNt62FFhSwjZlHmeokpRK59rcz29j+F1/aDgbkbRTk7wIc9XzdoasMUbRNKDM0qQt/+BJ4BrpFeABemw==
 
-eslint@^9.15.0:
-  version "9.16.0"
-  resolved "https://registry.yarnpkg.com/eslint/-/eslint-9.16.0.tgz#66832e66258922ac0a626f803a9273e37747f2a6"
-  integrity sha512-whp8mSQI4C8VXd+fLgSM0lh3UlmcFtVwUQjyKCFfsp+2ItAIYhlq/hqGahGqHE6cv9unM41VlqKk2VtKYR2TaA==
+eslint@^9.17.0:
+  version "9.17.0"
+  resolved "https://registry.yarnpkg.com/eslint/-/eslint-9.17.0.tgz#faa1facb5dd042172fdc520106984b5c2421bb0c"
+  integrity sha512-evtlNcpJg+cZLcnVKwsai8fExnqjGPicK7gnUtlNuzu+Fv9bI0aLpND5T44VLQtoMEnI57LoXO9XAkIXwohKrA==
   dependencies:
     "@eslint-community/eslint-utils" "^4.2.0"
     "@eslint-community/regexpp" "^4.12.1"
     "@eslint/config-array" "^0.19.0"
     "@eslint/core" "^0.9.0"
     "@eslint/eslintrc" "^3.2.0"
-    "@eslint/js" "9.16.0"
+    "@eslint/js" "9.17.0"
     "@eslint/plugin-kit" "^0.2.3"
     "@humanfs/node" "^0.16.6"
     "@humanwhocodes/module-importer" "^1.0.1"
@@ -1821,7 +1821,7 @@ eslint@^9.15.0:
     "@types/json-schema" "^7.0.15"
     ajv "^6.12.4"
     chalk "^4.0.0"
-    cross-spawn "^7.0.5"
+    cross-spawn "^7.0.6"
     debug "^4.3.2"
     escape-string-regexp "^4.0.0"
     eslint-scope "^8.2.0"
