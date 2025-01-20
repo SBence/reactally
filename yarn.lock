@@ -810,10 +810,10 @@
     "@lingui/cli" "^5.1.2"
     "@lingui/conf" "^5.1.2"
 
-"@mantine/core@^7.16.0":
-  version "7.16.0"
-  resolved "https://registry.yarnpkg.com/@mantine/core/-/core-7.16.0.tgz#b21714c0d63443aea837137a81a64b6bb00c592d"
-  integrity sha512-lYYwa4Itz77uC8zQzdiKiKdz9Q01NBOYPZsotIKsP/Zqij0qhpsVxoJ8MK3P8IqFyLfThTMmR4sT1qlGfLTA9Q==
+"@mantine/core@^7.16.1":
+  version "7.16.1"
+  resolved "https://registry.yarnpkg.com/@mantine/core/-/core-7.16.1.tgz#be9cb3f3288246664804c625f2340b6dbeed2548"
+  integrity sha512-HYdjCeMU3dUJbc1CrAAedeAASTG5kVyL/qsiuYh5b7BoG0qsRtK8WJxBpUjW6VqtJpUaE94c5tlBJ8MgAmPHTQ==
   dependencies:
     "@floating-ui/react" "^0.26.28"
     clsx "^2.1.1"
@@ -822,23 +822,23 @@
     react-textarea-autosize "8.5.6"
     type-fest "^4.27.0"
 
-"@mantine/hooks@^7.16.0":
-  version "7.16.0"
-  resolved "https://registry.yarnpkg.com/@mantine/hooks/-/hooks-7.16.0.tgz#5640abd7a580b02a026ff9610a50e8ce4a595569"
-  integrity sha512-8KxrhckesbrV6tyOndm6fJ+jSKA4KX/67ppDFlfYMMbV6Yh+s0zRO4KLi2uCtl6tgckQd2/zDzX3kQk+VYKqDA==
+"@mantine/hooks@^7.16.1":
+  version "7.16.1"
+  resolved "https://registry.yarnpkg.com/@mantine/hooks/-/hooks-7.16.1.tgz#3956b277ac19e456a42f8dceea4933ac4a8d7cb9"
+  integrity sha512-+hER8E4d2ByfQ/DKIXGM3Euxb7IH5ArSjzzzoF21sG095iXIryOCob22ZanrmiXCoAzKKdxqgVj4Di67ikLYSQ==
 
-"@mantine/notifications@^7.16.0":
-  version "7.16.0"
-  resolved "https://registry.yarnpkg.com/@mantine/notifications/-/notifications-7.16.0.tgz#5a328c6dbaf48f4d25de4402642b25ca9ab37aba"
-  integrity sha512-ofwpMLoe/QaXTEqrLNA2vEq4KblacKHLg1xJn7a40irt6uQ6GSlFoLveKjOupiG0xUa+gIbevA1uv3tHJuJ6uA==
+"@mantine/notifications@^7.16.1":
+  version "7.16.1"
+  resolved "https://registry.yarnpkg.com/@mantine/notifications/-/notifications-7.16.1.tgz#042e2f97f9ab9da7046a3488f18045ee05e2adcb"
+  integrity sha512-kCYbuanL+y/VZ0UqgE0fpQcpTznWHwLEOw4waMXHyig6z4AEEB45U3iFpBtuSXpuFjfqH0corMaaWkAVocwj2Q==
   dependencies:
-    "@mantine/store" "7.16.0"
+    "@mantine/store" "7.16.1"
     react-transition-group "4.4.5"
 
-"@mantine/store@7.16.0":
-  version "7.16.0"
-  resolved "https://registry.yarnpkg.com/@mantine/store/-/store-7.16.0.tgz#fff025e4d275b5ff1940f2d103f5c279c128c97a"
-  integrity sha512-IeeKk8w+a5Z5sctMUYrLBVVA9173B2oKPP4Rh656eoXH+vz/KCpL/ITnFWrt0Cv9Fyv/V+zm1UyAnUWRdQ6uXA==
+"@mantine/store@7.16.1":
+  version "7.16.1"
+  resolved "https://registry.yarnpkg.com/@mantine/store/-/store-7.16.1.tgz#5bfac11854a26a1c7565fef9450b178327617a38"
+  integrity sha512-EZjNzsLPWXB5MgBDa5FUEg5vbN+uo3hctSgplC7kkimjW7K3qfMiszwTt8cQgb7RRn7xH5sfC3U0Cm8X9h4kmA==
 
 "@messageformat/parser@^5.0.0":
   version "5.1.0"
@@ -3377,10 +3377,10 @@ vite-plugin-html@^3.2.0:
     node-html-parser "^5.3.3"
     pathe "^0.2.0"
 
-vite@^6.0.7:
-  version "6.0.7"
-  resolved "https://registry.yarnpkg.com/vite/-/vite-6.0.7.tgz#f0f8c120733b04af52b4a1e3e7cb54eb851a799b"
-  integrity sha512-RDt8r/7qx9940f8FcOIAH9PTViRrghKaK2K1jY3RaAURrEUbm9Du1mJ72G+jlhtG3WwodnfzY8ORQZbBavZEAQ==
+vite@^6.0.9:
+  version "6.0.9"
+  resolved "https://registry.yarnpkg.com/vite/-/vite-6.0.9.tgz#0a830b767ef7aa762360b56bdef955c1395dc1ee"
+  integrity sha512-MSgUxHcaXLtnBPktkbUSoQUANApKYuxZ6DrbVENlIorbhL2dZydTLaZ01tjUoE3szeFzlFk9ANOKk0xurh4MKA==
   dependencies:
     esbuild "^0.24.2"
     postcss "^8.4.49"
