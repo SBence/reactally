@@ -1,5 +1,6 @@
 import js from "@eslint/js";
 import eslintConfigPrettier from "eslint-config-prettier";
+import react from "eslint-plugin-react";
 import reactHooks from "eslint-plugin-react-hooks";
 import reactRefresh from "eslint-plugin-react-refresh";
 import globals from "globals";
@@ -23,9 +24,11 @@ export default tseslint.config(
         tsconfigRootDir: import.meta.dirname,
       },
     },
+    settings: { react: { version: "18.3" } },
     plugins: {
       "react-hooks": reactHooks,
       "react-refresh": reactRefresh,
+      react,
       lingui: pluginLingui,
     },
     rules: {
@@ -34,6 +37,10 @@ export default tseslint.config(
         "warn",
         { allowConstantExport: true },
       ],
+      ...react.configs.recommended.rules,
+      ...react.configs["jsx-runtime"].rules,
+      "no-unused-vars": "off",
+      "@typescript-eslint/no-unused-vars": "warn",
       "@typescript-eslint/no-misused-promises": [
         "error",
         {

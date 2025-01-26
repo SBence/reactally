@@ -3,25 +3,17 @@ name: Build project
 on: pull_request
 
 permissions:
-  contents: write
-  pull-requests: write
+  contents: read
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Use Node.js
-        uses: actions/setup-node@v4
+      - name: Setup up Node.js environment
+        uses: SBence/setup-node-workflow-yarn@master
         with:
           node-version: "*"
-          cache: "yarn"
-
-      - name: Install dependencies
-        run: yarn install
 
       - name: Downcase repository owner
         run: |
