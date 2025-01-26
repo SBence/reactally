@@ -8,13 +8,12 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "formatting:check": "yarn prettier --check .",
-    "formatting:apply": "yarn prettier --write .",
+    "formatting:check": "prettier --check .",
+    "formatting:apply": "prettier --write .",
     "messages:extract": "lingui extract",
     "messages:compile": "lingui compile"
   },
   "dependencies": {
-    "@emotion/react": "^11.14.0",
     "@lingui/macro": "^5.1.2",
     "@lingui/react": "^5.0.0",
     "@mantine/core": "^7.16.1",
@@ -39,6 +38,7 @@
     "eslint": "^9.18.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-lingui": "^0.9.0",
+    "eslint-plugin-react": "^7.37.2",
     "eslint-plugin-react-hooks": "^5.1.0",
     "eslint-plugin-react-refresh": "^0.4.18",
     "globals": "^15.14.0",
