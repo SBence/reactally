@@ -3,6 +3,9 @@ import react from "@vitejs/plugin-react";
 import { lingui } from "@lingui/vite-plugin";
 import { createHtmlPlugin } from "vite-plugin-html";
 
+let publicUrl = process.env.PUBLIC_URL;
+if (publicUrl && !publicUrl.endsWith("/")) publicUrl += "/";
+
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
@@ -14,9 +17,7 @@ export default defineConfig({
     lingui(),
     createHtmlPlugin({
       inject: {
-        data: {
-          publicUrl: process.env.PUBLIC_URL,
-        },
+        data: { publicUrl },
       },
     }),
   ],

@@ -1,8 +1,8 @@
-name: Deploy static content to Pages
+name: Deploy to Pages
 
 on:
   push:
-    branches: ["master"]
+    branches: [master]
     paths-ignore:
       - ".**"
 
@@ -14,59 +14,11 @@ permissions:
   id-token: write
 
 concurrency:
-  group: "pages"
+  group: pages
   cancel-in-progress: true
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Use Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: "*"
-          cache: "yarn"
-
-      - name: Install dependencies
-        run: yarn install
-
-      - name: Downcase repository owner
-        run: |
-          echo "REPOSITORY_OWNER=${GITHUB_REPOSITORY_OWNER,,}" >> "$GITHUB_ENV"
-
-      - name: Build project
-        run: yarn run build --base=/${{ github.event.repository.name }}/
-        env:
-          PUBLIC_URL: https://${{ env.REPOSITORY_OWNER }}.github.io/${{ github.event.repository.name }}/
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-
-      - name: Fix permissions
-        run: |
-          chmod -c -R +rX "_site/" | while read line; do
-            echo "::warning title=Invalid file permissions automatically fixed::$line"
-          done
-
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: "./dist"
-
-  deploy:
-    needs: build
-
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Deploy to Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+  pages:
+    uses: SBence/workflows/.github/workflows/deploy-vite.yml@master
+    with:
+      node-version: "*"

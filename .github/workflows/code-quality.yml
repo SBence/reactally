@@ -1,0 +1,25 @@
+name: Run code quality checks
+
+on: pull_request
+
+permissions:
+  contents: read
+
+jobs:
+  check-code-quality:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Set up Node.js environment
+        uses: SBence/setup-node-workflow@master
+        with:
+          node-version: "*"
+
+      - name: Check formatting
+        run: yarn formatting:check
+
+      - name: Lint code
+        run: yarn lint
+
+      - name: Build project
+        run: yarn run build --base ./
