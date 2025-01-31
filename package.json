@@ -14,7 +14,7 @@
     "messages:compile": "lingui compile"
   },
   "dependencies": {
-    "@lingui/macro": "^5.1.2",
+    "@lingui/macro": "^5.2.0",
     "@lingui/react": "^5.0.0",
     "@mantine/core": "^7.16.2",
     "@mantine/hooks": "^7.16.2",
@@ -29,8 +29,8 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.19.0",
-    "@lingui/cli": "^5.1.2",
-    "@lingui/vite-plugin": "^5.1.2",
+    "@lingui/cli": "^5.2.0",
+    "@lingui/vite-plugin": "^5.2.0",
     "@types/react": "^18.3.13",
     "@types/react-dom": "^18.3.1",
     "@vitejs/plugin-react": "^4.3.4",
