@@ -16,9 +16,9 @@
   "dependencies": {
     "@lingui/macro": "^5.3.0",
     "@lingui/react": "^5.0.0",
-    "@mantine/core": "^7.17.2",
-    "@mantine/hooks": "^7.17.2",
-    "@mantine/notifications": "^7.17.2",
+    "@mantine/core": "^7.17.3",
+    "@mantine/hooks": "^7.17.3",
+    "@mantine/notifications": "^7.17.3",
     "@reduxjs/toolkit": "^2.6.1",
     "@tabler/icons-react": "^3.31.0",
     "clsx": "^2.1.0",
