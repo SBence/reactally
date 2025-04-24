@@ -16,9 +16,9 @@
   "dependencies": {
     "@lingui/macro": "^5.3.1",
     "@lingui/react": "^5.0.0",
-    "@mantine/core": "^7.17.4",
-    "@mantine/hooks": "^7.17.4",
-    "@mantine/notifications": "^7.17.4",
+    "@mantine/core": "^7.17.5",
+    "@mantine/hooks": "^7.17.5",
+    "@mantine/notifications": "^7.17.5",
     "@reduxjs/toolkit": "^2.7.0",
     "@tabler/icons-react": "^3.31.0",
     "clsx": "^2.1.0",
@@ -48,7 +48,7 @@
     "prettier": "^3.5.3",
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.31.0",
-    "vite": "^6.3.2",
+    "vite": "^6.3.3",
     "vite-plugin-html": "^3.2.0"
   }
 }
