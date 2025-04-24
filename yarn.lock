@@ -658,10 +658,10 @@
     "@lingui/cli" "5.3.1"
     "@lingui/conf" "5.3.1"
 
-"@mantine/core@^7.17.4":
-  version "7.17.4"
-  resolved "https://registry.yarnpkg.com/@mantine/core/-/core-7.17.4.tgz#a537cc673d3e052da5bbec01bdd77cd87cacd9e1"
-  integrity sha512-Ea4M/98jxgIWCuxCdM0YIotVYjfLTGQsfIA6zDg0LsClgjo/ZLnnh4zbi+bLNgM+GGjP4ju7gv4MZvaTKuLO8g==
+"@mantine/core@^7.17.5":
+  version "7.17.5"
+  resolved "https://registry.yarnpkg.com/@mantine/core/-/core-7.17.5.tgz#ae8f8deb615ed8e642cc0afa7c4a76cd642d4f90"
+  integrity sha512-66g/lr281cDPfucjtPw8gFo/yNS9G5iSKqysvPGuDpUBG2bEw8FsJMIsU0bMXtravToIpa3vJRrFUuPndPGnpQ==
   dependencies:
     "@floating-ui/react" "^0.26.28"
     clsx "^2.1.1"
@@ -670,23 +670,23 @@
     react-textarea-autosize "8.5.9"
     type-fest "^4.27.0"
 
-"@mantine/hooks@^7.17.4":
-  version "7.17.4"
-  resolved "https://registry.yarnpkg.com/@mantine/hooks/-/hooks-7.17.4.tgz#45f7e6b0ca7d6ed80c91972f8eaa34358c7792e6"
-  integrity sha512-PBcJxDAfGm8k1/JJmaDcxzRVQ3JSE1iXGktbgGz+qEOJmCxwbbAYe+CtGFFgi1xX2bPZ+7dtRr/+XFhnKtt/aw==
+"@mantine/hooks@^7.17.5":
+  version "7.17.5"
+  resolved "https://registry.yarnpkg.com/@mantine/hooks/-/hooks-7.17.5.tgz#ae3c270161c4a156e3ca8dff1c7a73c4a3710c48"
+  integrity sha512-Q/3AHI1fjl+W7xQ3jEoMmSoTxLqxMI2gPfxIjd73OPmRpPenYWR1zk/diirXXm2t7JOrAbmpA3/O1gzmgqzc/Q==
 
-"@mantine/notifications@^7.17.4":
-  version "7.17.4"
-  resolved "https://registry.yarnpkg.com/@mantine/notifications/-/notifications-7.17.4.tgz#e82798cfa762c7e29306ff84a00abc34d53b5c7a"
-  integrity sha512-YxNmnZSfIG69lPMFItOZZsizYL3DsOLVUSPkkJILG5pW2F798dc4IA5mhRIbdmzDEx0ArWHJ7gsdd3Vmm5ubPg==
+"@mantine/notifications@^7.17.5":
+  version "7.17.5"
+  resolved "https://registry.yarnpkg.com/@mantine/notifications/-/notifications-7.17.5.tgz#dc8a7179422a8c2086c92542d136c99a1eed16de"
+  integrity sha512-dLbrSm7ct97fb0Yv8ImVj9mVNkjnD/xkDCP1PANt/shM9xDh0TguqQTvborb+8Wxh1g+RtWVML/an5rVsHbKmg==
   dependencies:
-    "@mantine/store" "7.17.4"
+    "@mantine/store" "7.17.5"
     react-transition-group "4.4.5"
 
-"@mantine/store@7.17.4":
-  version "7.17.4"
-  resolved "https://registry.yarnpkg.com/@mantine/store/-/store-7.17.4.tgz#8930a29da9d9d1a59f4d7fe36e4fa805c11bcb16"
-  integrity sha512-a/EecHPtYVxhu3oMX9uTymGolmOBWxW8Qs4fLCjiazEJbS1ScI4lS71GK/SuOa2rGuuOJkaotpyritbx3paIRg==
+"@mantine/store@7.17.5":
+  version "7.17.5"
+  resolved "https://registry.yarnpkg.com/@mantine/store/-/store-7.17.5.tgz#898a0176c79ef764a76ea9adec5ea36de97e2e10"
+  integrity sha512-HQzy4rBlUFyw+39TgiAV+TGuQivMWYeQlnMctKJlaxwVY5ZTdF2IpJ/JZcjkGrmrZvBwUQ8IOMFvt2eZc20P1Q==
 
 "@messageformat/parser@^5.0.0":
   version "5.1.0"
@@ -2100,10 +2100,10 @@ fastq@^1.6.0:
   dependencies:
     reusify "^1.0.4"
 
-fdir@^6.4.3:
-  version "6.4.3"
-  resolved "https://registry.yarnpkg.com/fdir/-/fdir-6.4.3.tgz#011cdacf837eca9b811c89dbb902df714273db72"
-  integrity sha512-PMXmW2y1hDDfTSRc9gaXIuCCRpuoz3Kaz8cUelp3smouvfT632ozg2vrT6lJsHKKOF59YLbOGfAWGUcKEfRMQw==
+fdir@^6.4.4:
+  version "6.4.4"
+  resolved "https://registry.yarnpkg.com/fdir/-/fdir-6.4.4.tgz#1cfcf86f875a883e19a8fab53622cfe992e8d2f9"
+  integrity sha512-1NZP+GK4GfuAv3PqKvxQRDMjdSRZjnkq7KfhlNrCNNlZ0ygQFpebfrnfnq/W7fpUnAv9aGWmY1zKx7FYL3gwhg==
 
 figures@^3.0.0:
   version "3.2.0"
@@ -3933,12 +3933,12 @@ through@^2.3.6:
   resolved "https://registry.yarnpkg.com/through/-/through-2.3.8.tgz#0dd4c9ffaabc357960b1b724115d7e0e86a2e1f5"
   integrity sha512-w89qg7PI8wAdvX60bMDP+bFoD5Dvhm9oLheFp5O4a2QF0cSBGsBX4qZmadPMvVqlLJBBci+WqGGOAPvcDeNSVg==
 
-tinyglobby@^0.2.12:
-  version "0.2.12"
-  resolved "https://registry.yarnpkg.com/tinyglobby/-/tinyglobby-0.2.12.tgz#ac941a42e0c5773bd0b5d08f32de82e74a1a61b5"
-  integrity sha512-qkf4trmKSIiMTs/E63cxH+ojC2unam7rJ0WrauAzpT3ECNTxGRMlaXxVbfxMUC/w0LaYk6jQ4y/nGR9uBO3tww==
+tinyglobby@^0.2.13:
+  version "0.2.13"
+  resolved "https://registry.yarnpkg.com/tinyglobby/-/tinyglobby-0.2.13.tgz#a0e46515ce6cbcd65331537e57484af5a7b2ff7e"
+  integrity sha512-mEwzpUgrLySlveBwEVDMKk5B57bhLPYovRfPAXD5gA/98Opn0rCDj3GtLwFvCvH5RK9uPCExUROW5NjDwvqkxw==
   dependencies:
-    fdir "^6.4.3"
+    fdir "^6.4.4"
     picomatch "^4.0.2"
 
 tmp@^0.0.33:
@@ -4158,17 +4158,17 @@ vite-plugin-html@^3.2.0:
     node-html-parser "^5.3.3"
     pathe "^0.2.0"
 
-vite@^6.3.2:
-  version "6.3.2"
-  resolved "https://registry.yarnpkg.com/vite/-/vite-6.3.2.tgz#4c1bb01b1cea853686a191657bbc14272a038f0a"
-  integrity sha512-ZSvGOXKGceizRQIZSz7TGJ0pS3QLlVY/9hwxVh17W3re67je1RKYzFHivZ/t0tubU78Vkyb9WnHPENSBCzbckg==
+vite@^6.3.3:
+  version "6.3.3"
+  resolved "https://registry.yarnpkg.com/vite/-/vite-6.3.3.tgz#497392c3f2243194e4dbf09ea83e9a3dddf49b88"
+  integrity sha512-5nXH+QsELbFKhsEfWLkHrvgRpTdGJzqOZ+utSdmPTvwHmvU6ITTm3xx+mRusihkcI8GeC7lCDyn3kDtiki9scw==
   dependencies:
     esbuild "^0.25.0"
-    fdir "^6.4.3"
+    fdir "^6.4.4"
     picomatch "^4.0.2"
     postcss "^8.5.3"
     rollup "^4.34.9"
-    tinyglobby "^0.2.12"
+    tinyglobby "^0.2.13"
   optionalDependencies:
     fsevents "~2.3.3"
 
