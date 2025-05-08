@@ -19,7 +19,7 @@
     "@mantine/core": "^7.17.7",
     "@mantine/hooks": "^7.17.7",
     "@mantine/notifications": "^7.17.7",
-    "@reduxjs/toolkit": "^2.8.0",
+    "@reduxjs/toolkit": "^2.8.1",
     "@tabler/icons-react": "^3.31.0",
     "clsx": "^2.1.0",
     "react": "^18.2.0",
