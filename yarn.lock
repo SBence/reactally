@@ -1869,10 +1869,10 @@ eslint-config-prettier@^10.1.8:
   resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-10.1.8.tgz#15734ce4af8c2778cc32f0b01b37b0b5cd1ecb97"
   integrity sha512-82GZUjRS0p/jganf6q1rEO25VSoHH0hKPCTrgillPjdI/3bgBhAE1QzHrHTizjpRvy6pGAvKjDJtk2pF9NDq8w==
 
-eslint-plugin-lingui@^0.10.1:
-  version "0.10.1"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-lingui/-/eslint-plugin-lingui-0.10.1.tgz#25e34e7d1eda0a05db2b30154ef0ac3de1793249"
-  integrity sha512-pyNM1fC4IDgxOdzwe4DxOOIBf396tbE8m9s4aw01TqOKCEIXT2apSqmZ6ESeX26lBQS2ItYj/0Bhme6ZLKfYNQ==
+eslint-plugin-lingui@^0.11.0:
+  version "0.11.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-lingui/-/eslint-plugin-lingui-0.11.0.tgz#e33a4fe83698bb4cdfbfa816391fb79b68e6c026"
+  integrity sha512-O2Ixoapt5fa4VKZJgXhVwb6BHnzByIUDNMfZOhHWGMYk40GfGCho4MUfspLVrHAFLimgBPKXtCcJ8GC4YNZmfg==
   dependencies:
     "@typescript-eslint/utils" "^8.0.0"
     micromatch "^4.0.0"
