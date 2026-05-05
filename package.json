@@ -20,7 +20,7 @@
     "@mantine/hooks": "^7.17.8",
     "@mantine/notifications": "^7.17.8",
     "@reduxjs/toolkit": "^2.11.2",
-    "@tabler/icons-react": "^3.41.1",
+    "@tabler/icons-react": "^3.42.0",
     "clsx": "^2.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -42,12 +42,12 @@
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.5.2",
     "globals": "^16.5.0",
-    "postcss": "^8.5.13",
+    "postcss": "^8.5.14",
     "postcss-preset-mantine": "^1.18.0",
     "postcss-simple-vars": "^7.0.1",
     "prettier": "^3.8.3",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.59.1",
+    "typescript-eslint": "^8.59.2",
     "vite": "^6.4.2",
     "vite-plugin-html": "^3.2.0"
   }
